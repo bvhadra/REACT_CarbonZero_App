@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../Button/button";
 import questionsList from "../../lib/data";
 import PreviousButton from "../PreviousButton/PreviousButton";
+import Results from '../Results/Results'
 
 export default function Questionnaire({ response, setResponse }) {
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -20,6 +21,7 @@ export default function Questionnaire({ response, setResponse }) {
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
+      <Results />
     </>
   );
 }

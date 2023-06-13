@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Button({ data, questionIndex, setQuestionIndex, response, setResponse }) {
   const { answers, question, calculations } = data;
-  console.log(calculations);
+//   console.log(calculations);
 
   const handleClick = (index) => {
     setQuestionIndex(questionIndex + 1);
     setResponse([...response, calculations[index]]);
-    console.log(index);
+    console.log(response);
   };
 
   const answerList = answers.map((answer, index) => (
