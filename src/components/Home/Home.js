@@ -1,9 +1,12 @@
-import React from 'react';
-import Navbar from '../Navbar/Navbar'
-//import footp.jpeg from '../assets';
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import "./Home.css";
+import foot from "../../assets/foot.png";
+import amazon from "../../assets/amazon-forest.png";
+import travel from "../../assets/air-travel.png";
+import industry from "../../assets/industrial-polution.png";
 
 function Home() {
- 
   return (
     <>
       <header>
@@ -11,22 +14,20 @@ function Home() {
       </header>
       <section className="section-1">
         <h1 className="section-1-h1">
-          How big is your environmental footprint
+          How big is your environmental footprint?
         </h1>
         <img
-          src="src/assets/foot.png"
+          src={foot}
           alt="Carbon Footprint"
-          className="footprint"
-        ></img>
-        <button>Learn more...</button>
+          className="section-1-footprint"
+        />
+        <button className="section-1-button">Learn more...</button>
       </section>
       <section className="section-2">
-        <img src="" alt="" className=""></img>
+        <img src={amazon} alt="" className="section-2-img"></img>
         <h2 className="section-2-h2">Food Waste</h2>
         <h4 className="section-2-h4">
           1/3 of all food produced for human consumption is wasted.
-        </h4>
-        <h4 className="section-2-h4">
           This accounts for 8% of global greenhouse gas emissions.
         </h4>
       </section>
@@ -38,10 +39,10 @@ function Home() {
         <h4 className="section-3-h4">
           This accounts for 8% of global greenhouse gas emissions.
         </h4>
-        <img src="" alt="" className=""></img>
+        <img src={travel} alt="" className="section-3-img"></img>
       </section>
       <section className="section-4">
-        <img src="" alt="" className=""></img>
+        <img src={industry} alt="" className="section-4-img"></img>
         <h2 className="section-4-h2">Energy Consumption</h2>
         <h4 className="section-4-h4">
           1/3 of all food produced for human consumption is wasted.
