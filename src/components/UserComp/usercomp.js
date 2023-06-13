@@ -3,11 +3,11 @@ import Questionnaire from '../Questionnaire/Questionnaire'
 
 export default function UserComp() {
 
-    // const [ answers, setAnswers ] = useState([{}])
+    const [ response, setResponse ] = useState([])
 
     return (
     <>
-    <Questionnaire />
+    <Questionnaire response={response} setResponse={setResponse}/>
     </>
 
 
