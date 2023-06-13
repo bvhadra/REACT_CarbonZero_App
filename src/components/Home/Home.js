@@ -27,16 +27,15 @@ function Home() {
         <img src={amazon} alt="" className="section-2-img"></img>
         <h2 className="section-2-h2">Food Waste</h2>
         <h4 className="section-2-h4">
-          1/3 of all food produced for human consumption is wasted.
+          1/3 of all food produced for human consumption is wasted.<br/><br/>
           This accounts for 8% of global greenhouse gas emissions.
         </h4>
       </section>
       <section className="section-3">
         <h2 className="section-3-h2">Travel Miles</h2>
         <h4 className="section-3-h4">
-          1/3 of all food produced for human consumption is wasted.
-        </h4>
-        <h4 className="section-3-h4">
+          1/3 of all food produced for human consumption is wasted.        
+        <br/><br/>
           This accounts for 8% of global greenhouse gas emissions.
         </h4>
         <img src={travel} alt="" className="section-3-img"></img>
