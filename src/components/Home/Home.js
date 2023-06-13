@@ -41,12 +41,11 @@ function Home() {
         <img src={travel} alt="" className="section-3-img"></img>
       </section>
       <section className="section-4">
-        <img src={industry} alt="" className="section-4-img"></img>
+      <img src={industry} alt="industrial waste" className="section-4-img"/>
         <h2 className="section-4-h2">Energy Consumption</h2>
         <h4 className="section-4-h4">
           1/3 of all food produced for human consumption is wasted.
-        </h4>
-        <h4 className="section-4-h4">
+          <br/><br/>
           This accounts for 8% of global greenhouse gas emissions.
         </h4>
       </section>
