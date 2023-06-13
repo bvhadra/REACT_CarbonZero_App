@@ -1,18 +1,23 @@
 import React from "react";
 
-export default function Button(props) {
+export default function Button({data, questionIndex, setQuestionIndex}) {
 
-    const {answers} = props.data
+    const {answers, question} = data
     console.log(answers)
+
+    const handleClick = () => {
+        setQuestionIndex(questionIndex + 1)
+    }
 
     const answerList = answers.map((answer, index) => (
         <div key={index}>
-            <button className="answerButton">{answer}</button>
+            <button onClick = {handleClick} className="answerButton">{answer}</button>
         </div>
     ))
 
     return (
         <>
+        <h1 className = "questionTitle">{question}</h1>
         {answerList}
         </>
     )

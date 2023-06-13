@@ -1,18 +1,52 @@
 const questionsList = [
     {
-        question: "How many miles a year do you drive?",
+        question: "How often do you travel by car in a week?",
         answers: [
-            "0", "Less than 10k", "10k-20k", "30k+", 
+            "None", "1-2 times", "3-5 times", "More than 5 times"
         ]
-        
     },
     {
-        question: "How much food do you throw away a year?",
+        question: "How often do you use public transportation in a week?",
         answers: [
-            "0", "Less than 10kg", "10kg-20kg", "30kg+", 
+            "None", "1-2 times", "3-5 times", "More than 5 times"
         ]
-        
+    },
+    {
+        question: "How often do you take flights in a year?",
+        answers: [
+            "None", "1-2 times", "3-5 times", "More than 5 times"
+        ]
+    },
+    {
+        question: "How often do you consume red meat in a week?",
+        answers: [
+            "None", "1-2 times", "3-4 times", "More than 4 times"
+        ]
+    },
+    {
+        question: "How often do you eat seafood in a week?",
+        answers: [
+            "None", "1-2 times", "3-4 times", "More than 4 times"
+        ]
+    },
+    {
+        question: "How often do you eat fruits and vegetables in a week?",
+        answers: [
+            "None", "1-2 times", "3-4 times", "More than 4 times"
+        ]
+    },
+    {
+        question: "How often do you use air conditioning or heating at home?",
+        answers: [
+            "Never", "Occasionally", "Regularly", "All the time"
+        ]
+    },
+    {
+        question: "How often do you recycle household waste?",
+        answers: [
+            "Never", "Occasionally", "Regularly", "Always"
+        ]
     }
-]
+];
 
-export default questionsList
+export default questionsList;
