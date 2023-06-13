@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
+import "../Navbar/Navbar.css"
 import foot from "../../assets/foot.png";
 import amazon from "../../assets/amazon-forest.png";
 import travel from "../../assets/air-travel.png";
@@ -53,7 +54,7 @@ function Home() {
       <section className="subscribe-1">
         <h2 className="subscribe-1-h2">Join Our Mission</h2>
         <input type="text" className="subscribe-1-input"></input>
-        <submit className="subscribe-1-submit">Subscribe</submit>
+        <button className="subscribe-1-submit">Subscribe</button>
       </section>
     </>
   );
