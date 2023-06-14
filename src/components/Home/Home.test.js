@@ -16,6 +16,18 @@ test("renders Learn more...", () => {
   expect(buttonElement).toBeInTheDocument();
 });
 
+test("renders Travel Miles", () => {
+  render(<Home />);
+  const sectionElement = screen.getByText(/Travel Miles/i);
+  expect(sectionElement).toBeInTheDocument();
+});
+
+test("renders Energy Consumption", () => {
+  render(<Home />);
+  const sectionElement = screen.getByText(/Energy Consumption/i);
+  expect(sectionElement).toBeInTheDocument();
+});
+
 test("renders Join Our Mission", () => {
   render(<Home />);
   const footerElement = screen.getByText(/Join Our Mission/i);
