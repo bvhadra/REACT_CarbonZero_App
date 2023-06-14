@@ -13,6 +13,7 @@ function Home() {
       <header>
         <Navbar />
       </header>
+      <main>
       <section className="section-1">
         <h1 className="section-1-h1">
           How big is your environmental footprint?
@@ -25,7 +26,7 @@ function Home() {
         <button className="section-1-button">Learn more...</button>
       </section>
       <section className="section-2">
-        <img src={amazon} alt="" className="section-2-img"></img>
+        <img src={amazon} alt="" className="section-2-img"/>
         <h2 className="section-2-h2">Food Waste</h2>
         <h4 className="section-2-h4">
           1/3 of all food produced for human consumption is wasted.<br/><br/>
@@ -39,21 +40,21 @@ function Home() {
         <br/><br/>
           This accounts for 8% of global greenhouse gas emissions.
         </h4>
-        <img src={travel} alt="" className="section-3-img"></img>
+        <img src={travel} alt="aeroplane flying" className="section-3-img"/>
       </section>
       <section className="section-4">
       <img src={industry} alt="industrial waste" className="section-4-img"/>
         <h2 className="section-4-h2">Energy Consumption</h2>
-        <h4 className="section-4-h4">
-          1/3 of all food produced for human consumption is wasted.
-          <br/><br/>
-          This accounts for 8% of global greenhouse gas emissions.
+          <h4 className="section-4-h4">1/3 of all food produced for human consumption is wasted.
+            <br /><br />
+            This accounts for 8% of global greenhouse gas emissions.
         </h4>
-      </section>
+        </section>
+        </main>
 
       <section className="subscribe-1">
         <h2 className="subscribe-1-h2">Join Our Mission</h2>
-        <input type="text" className="subscribe-1-input"></input>
+        <input type="text" className="subscribe-1-input"/>
         <button className="subscribe-1-submit">Subscribe</button>
       </section>
     </>

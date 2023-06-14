@@ -3,10 +3,16 @@ import Home from "../Home/Home";
 
 test("renders How big is your environmental footprint?", () => {
   render(<Home />);
-  const linkElement = screen.getByText(
+  const headingElement = screen.getByText(
     /How big is your environmental footprint/i
   );
-  expect(linkElement).toBeInTheDocument();
+  expect(headingElement).toBeInTheDocument();
+});
+
+test("renders Join Our Mission", () => {
+  render(<Home />);
+  const footerElement = screen.getByText(/Join Our Mission/i);
+  expect(footerElement).toBeInTheDocument();
 });
 
 

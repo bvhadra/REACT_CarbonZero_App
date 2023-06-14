@@ -1,7 +1,61 @@
-.navbar{
-
+:root {
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
 }
 
-body{
+.header-div {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 20vh;
+
+    background-color: var(--floral-white-color);
+}
+.logo {
+    grid-column: 1/3;
+    width: 100%;
+}
+
+.navbar{
+    grid-column: 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    list-style: none;
+}
+.navbar li {
+    width: max-content;
+    height: auto;
+    grid-row: 2;
+     padding: 0.5rem 1.5rem;
+}
+.navbar a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--brunswick-green-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: inherit;
     
 }
+.navbar a:hover {
+    font-size: 1.1rem;
+    text-align: center;
+    border: 1px solid var(--brunswick-green-color);
+    /* height: fit-content; */
+}
+
+/* 
+<img src={logo} alt="Carbon Zero Logo" className="logo" />
+      <ul className="navbar">
+        <li>Rewards</li>
+        <li>Questionaire</li>
+        <li>Become a member</li>
+        <li>Sign in</li>
+      </ul>
+      
+*/
