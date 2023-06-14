@@ -21,7 +21,7 @@ export default function Questionnaire({ response, setResponse }) {
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
-      <Results />
+      {/* <Results /> */}
     </>
   );
 }

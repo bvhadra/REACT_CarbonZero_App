@@ -1,6 +1,6 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
-import {Routes, Route, Link} from "react-router-dom";
+//import {Routes, Route, Link} from "react-router-dom";
 import {
   Chart,
   ArgumentAxis,
