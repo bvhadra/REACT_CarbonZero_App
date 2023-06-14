@@ -15,4 +15,15 @@ test("renders Join Our Mission", () => {
   expect(footerElement).toBeInTheDocument();
 });
 
+test("renders Travel Miles", () => {
+  render(<Home />);
+  const sectionElement = screen.getByText(/Travel Miles/i);
+  expect(sectionElement).toBeInTheDocument();
+});
+
+test("renders Energy Consumption", () => {
+  render(<Home />);
+  const sectionElement = screen.getByText(/Energy Consumption/i);
+  expect(sectionElement).toBeInTheDocument();
+});
 
