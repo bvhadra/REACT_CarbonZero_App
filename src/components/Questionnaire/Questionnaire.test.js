@@ -1,8 +1,5 @@
-import {test, expect} from "@jest/globals"; 
-
-test ("SeeResultsButton should only appear on the last question") {
-    
-}
+// import {test, expect} from "@jest/globals";
+// import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 
 
 
