@@ -54,7 +54,7 @@ function Home() {
 
       <section className="subscribe-1">
         <h2 className="subscribe-1-h2">Join Our Mission</h2>
-        <input type="text" className="subscribe-1-input"/>
+        <input type="text" className="subscribe-1-input" placeholder="Enter your email here..." />
         <button className="subscribe-1-submit">Subscribe</button>
       </section>
     </>

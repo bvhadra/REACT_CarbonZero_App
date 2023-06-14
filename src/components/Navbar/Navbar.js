@@ -11,7 +11,7 @@ function Navbar() {
           <a href="../Rewards/Rewards.js">Rewards</a>
         </li>
         <li>
-          <a href="../Questionnaire/Questionnaire.js">Questionaire</a>
+          <a href="../Questionnaire/Questionnaire.js">Questionnaire</a>
         </li>
         <li>
           <a href="../Become a member/Become a member.js">Become a member</a>
