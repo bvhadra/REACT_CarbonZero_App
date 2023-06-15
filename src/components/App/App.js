@@ -1,5 +1,7 @@
+
 import './App.css';
 import UserComp from '../UserComp/usercomp';
+import Home from "../Home/Home";
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <header className="App-header">
         <UserComp />
       </header>
+      <Home />
     </div>
   );
 }

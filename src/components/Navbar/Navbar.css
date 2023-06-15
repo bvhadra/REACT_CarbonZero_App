@@ -1,0 +1,44 @@
+/* app accessibility colors */
+:root {
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
+
+/* navbar styles */
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  list-style: none;
+  background-color: var(--floral-white-color);
+}
+.navbar li {
+  width: max-content;
+  height: auto;
+}
+.navbar ul {
+  width: max-content;
+  list-style: none;
+  grid-column: 9;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  align-content: end;
+  color: var(--brunswick-green-color);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+}
+.navbar a:hover {
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1px solid var(--brunswick-green-color);
+}
+
+/* end */
