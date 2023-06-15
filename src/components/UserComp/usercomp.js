@@ -8,9 +8,9 @@ export default function UserComp() {
 
     const [total, setTotal ] = useState(
       {
-        travel: 0,
-        food: 0,
-        energy: 0
+        travel: 1,
+        food: 2,
+        energy: 3,
 
       }
     )

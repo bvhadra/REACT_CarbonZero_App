@@ -22,7 +22,7 @@ const Label = props => (
   <Legend.Label {...props} sx={{ whiteSpace: 'nowrap' }} />
 );
 
-const Results = (total) => {
+const Results = ( { total } ) => {
 
  const energyConsumption = [
     {
