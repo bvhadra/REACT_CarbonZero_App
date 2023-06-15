@@ -1,7 +1,12 @@
 import React from 'react'
+import Navbar from '../Navbar/Navbar';
+
 
 export default function BecomeAMember() {
-  return (
-    <div>BecomeAMember</div>
-  )
+    return (
+        <>
+            <Navbar/>
+        <div>BecomeAMember</div>
+      </>
+    );
 }

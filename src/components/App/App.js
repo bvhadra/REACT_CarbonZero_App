@@ -11,25 +11,24 @@ import "./App.css";
 function App() {
   const paths = {
     "/": "",
-    "/rewards": "/Rewards/Rewards.js",
+    "/rewards": "/Rewards/Rewards",
     "/questionnaire": "/Questionnaire/Questionnaire",
-    "/become a member": "/Become%20a%20member/Become%20a%20member.js",
-    "/sign in": "/Sign%20in/Sign%20in.js",
+    "/become a member": "/BecomeAMember/BecomeAMember",
+    "/sign in": "/SignIn/SignIn",
     "/usercomp": "",
     "/actions": ""
   };
  
   return (
-
     <div className="App">
       <Routes>
         <Route path={paths["/"]} element={<Home />} />
         <Route path={paths["/rewards"]} element={<Rewards />} />
-        <Route path="/questionnaire" element={<Questionnaire />} />
-        <Route path="/become a member" element={<BecomeAMember />} />
-        <Route path="/sign in" element={<SignIn />} />
-        <Route path="/usercomp" element={<UserComp />} />
-        <Route path="/actions" element={<Actions />} />
+        <Route path={paths["/questionnaire"]} element={<Questionnaire />} />
+        <Route path={paths["/become a member"]} element={<BecomeAMember />} />
+        <Route path={paths["/sign in"]} element={<SignIn />} />
+        <Route path={paths["/usercomp"]} element={<UserComp />} />
+        <Route path={paths["/actions"]} element={<Actions />} />
       </Routes>
       {/* <header className="App-header">
         <UserComp />

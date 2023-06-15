@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Navbar/Navbar";
 
 export default function SignIn() {
   return (
-    <div>SignIn</div>
-  )
+    <>
+      <Navbar />
+      <div>SignIn</div>
+    </>
+  );
 }

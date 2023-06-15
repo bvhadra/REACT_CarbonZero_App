@@ -3,7 +3,7 @@ import Button from "../Button/button";
 import questionsList from "../../lib/data";
 import PreviousButton from "../PreviousButton/PreviousButton";
 import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
-import Navbar from "../Navbar/Navbar";
+// import Navbar from "../Navbar/Navbar";
 // import Results from '../Results/Results'
 
 export default function Questionnaire({ response, setResponse, total, setTotal }) {
@@ -11,7 +11,7 @@ export default function Questionnaire({ response, setResponse, total, setTotal }
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Button
         data={questionsList[questionIndex]}
         setQuestionIndex={setQuestionIndex}

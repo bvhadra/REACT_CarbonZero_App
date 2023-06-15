@@ -25,7 +25,7 @@ function Home() {
             className="section-1-footprint"
           />
           <button className="section-1-button">
-            <Link to="../Questionnaire/Questionnaire.js" id="learn-more" >Learn more...</Link>
+            <Link to="../Questionnaire/Questionnaire" id="learn-more" >Learn more...</Link>
           </button>
         </section>
         <section className="section-2">

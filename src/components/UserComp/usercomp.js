@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Questionnaire from '../Questionnaire/Questionnaire'
 import questionsList from '../../lib/data'
+import Navbar from '../Navbar/Navbar';
 
 export default function UserComp() {
 
@@ -16,7 +17,8 @@ export default function UserComp() {
     )
       
     return (
-    <>
+      <>
+        <Navbar />
     <Questionnaire total={total} setTotal={setTotal} response={response} setResponse={setResponse}/>
     </>
 
