@@ -22,7 +22,8 @@ export default function Questionnaire({ response, setResponse, total, setTotal }
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
-      <SeeResultsButton total={total} setTotal={setTotal} />
+      <SeeResultsButton total={total} setTotal={setTotal} setQuestionIndex={setQuestionIndex}
+        questionIndex={questionIndex} />
       {/* <Results /> */}
     </>
   );
