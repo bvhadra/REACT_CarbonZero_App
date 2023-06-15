@@ -36,7 +36,7 @@ test("renders Join Our Mission", () => {
 
 test("renders Enter your email here...", () => {
   render(<Home />);
-  const inputElement = screen.getAllByPlaceholderText(/Enter your email here/i);
+  const inputElement = screen.getByPlaceholderText(/Enter your email here/i);
   expect(inputElement).toBeInTheDocument();
 });
 

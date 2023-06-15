@@ -2,6 +2,11 @@ import { render, screen } from "@testing-library/react";
 import Navbar from "../Navbar/Navbar";
 
 // visibility: testing for text contents expected to be visible to users on the home page Navbar area.
+test("renders Logo", () => {
+  render(<Navbar />);
+  const logoElement = screen.getByAltText(/Carbon Zero Logo/i);
+  expect(logoElement).toBeInTheDocument();
+});
 test("renders Rewards", () => {
   render(<Navbar />);
   const linkElement = screen.getByText(/Rewards/i);
