@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Button from "../Button/button";
 import questionsList from "../../lib/data";
 import PreviousButton from "../PreviousButton/PreviousButton";
+import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 // import Results from '../Results/Results'
 
-export default function Questionnaire({ response, setResponse }) {
+export default function Questionnaire({ response, setResponse, total, setTotal }) {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   return (
@@ -21,6 +22,7 @@ export default function Questionnaire({ response, setResponse }) {
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
+      <SeeResultsButton total={total} setTotal={setTotal} />
       {/* <Results /> */}
     </>
   );

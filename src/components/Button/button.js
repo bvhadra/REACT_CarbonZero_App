@@ -7,7 +7,7 @@ export default function Button({ data, questionIndex, setQuestionIndex, response
   const handleClick = (index) => {
     setQuestionIndex(questionIndex + 1);
     // setResponse([...response, calculations[index]]);
-   setResponse(response.map((item, idx) => (idx === questionIndex ? calculations[index] : item)));
+   setResponse(response.map((item, idx) => (idx === questionIndex ? { ...item, response: calculations[index] }  : item)));
     console.log(response);
   };
 
