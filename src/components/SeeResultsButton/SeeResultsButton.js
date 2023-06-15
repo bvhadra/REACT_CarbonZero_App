@@ -1,8 +1,8 @@
 import React from "react";
 import questionsList from "../../lib/data";
 
-export default function SeeResultsButton({ questionIndex, total, setTotal }) {
-  if (questionIndex !== questionsList.length - 1) {
+export default function SeeResultsButton(props) {
+  if (props.questionIndex !== questionsList.length - 1) {
     return null;
   }
 
@@ -12,18 +12,31 @@ export default function SeeResultsButton({ questionIndex, total, setTotal }) {
 
   const handleClick = () => {
     // Create a copy of the total object
-    let newTotal = { ...total };
+
+    let newTotal = { ...props.total }
+    
+    console.log("before" + newTotal)
 
     questionsList.forEach((item, index) => {
+
       // If the category exists in the total object, increment the score.
-      if (newTotal.hasOwnProperty(item.category)) {
-        newTotal[item.category] += item.response;
+
+      // if the category is = travel, add the response to the score
+      
+
+      if(item.category === "travel") {
+          newTotal.travel += item.response
       }
+
+
+      // if (newTotal.hasOwnProperty(item.category)) {
+      //   newTotal[item.category] += item.response;
+      // }
     });
 
     // Update the state with the new total
-    setTotal(newTotal);
-    console.log("total", total);
+    props.setTotal(newTotal);
+    console.log("total", newTotal);
     console.log("SeeResultsButton clicked", newTotal);
   };
 
