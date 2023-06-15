@@ -40,5 +40,11 @@
   text-align: center;
   border: 1px solid var(--brunswick-green-color);
 }
+.navbar li #logo-button {
+  cursor: pointer;
+}
+.navbar li #logo-button:hover {
+  border: none;
+}
 
 /* end */

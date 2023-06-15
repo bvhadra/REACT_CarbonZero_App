@@ -1,4 +1,5 @@
 import React from "react";
+import "./button.css"
 
 export default function Button({ data, questionIndex, setQuestionIndex, response, setResponse }) {
   const { answers, question, calculations } = data;

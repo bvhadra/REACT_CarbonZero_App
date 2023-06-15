@@ -4,11 +4,14 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+
   return (
     <div className="header-div">
       <ul className="navbar">
         <li>
-          <img src={logo} alt="Carbon Zero Logo" className="logo" />
+          <Link to="/" id="logo-button">
+            <img src={logo} alt="Carbon Zero Logo" className="logo" />
+          </Link>
         </li>
         <ul className="navbar-ul">
           <li>
@@ -18,9 +21,7 @@ function Navbar() {
             <Link to="../Questionnaire/Questionnaire">Questionnaire</Link>
           </li>
           <li>
-            <Link to="../BecomeAMember/BecomeAMember">
-              Become a member
-            </Link>
+            <Link to="../BecomeAMember/BecomeAMember">Become a member</Link>
           </li>
           <li>
             <Link to="../SignIn/SignIn">Sign in</Link>

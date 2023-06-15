@@ -6,7 +6,7 @@
   --floral-white-color: #fcf9ed;
 }
 
-.answerButton {
+.SeeResultsButton {
      width: 20rem;
   height: 3.5rem;
   grid-column: 10;

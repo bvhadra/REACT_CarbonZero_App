@@ -8,7 +8,10 @@ import UserComp from "../UserComp/usercomp";
 import { Actions } from "../Actions/Actions";
 import "./App.css";
 
+
 function App() {
+
+  //paths object for routing files to be rendered by app component using react router
   const paths = {
     "/": "",
     "/rewards": "/Rewards/Rewards",

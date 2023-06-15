@@ -1,4 +1,5 @@
 import React from 'react'
+import "./PreviousButton.css"
 
 function PreviousButton({questionIndex, setQuestionIndex}) {
 
