@@ -14,7 +14,7 @@ export default function Button({ data, questionIndex, setQuestionIndex, response
 
   const answerList = answers.map((answer, index) => (
     <div key={index}>
-      <button onClick={() => handleClick(index)} className="answerButton">
+      <button onClick={() => handleClick(index)} className="answer-button">
         {answer}
       </button>
     </div>
@@ -22,7 +22,7 @@ export default function Button({ data, questionIndex, setQuestionIndex, response
 
   return (
     <>
-      <h1 className="questionTitle">{question}</h1>
+      <h1 className="question-title">{question}</h1>
       {answerList}
     </>
   );

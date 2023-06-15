@@ -22,6 +22,6 @@ export default function SeeResultsButton({questionIndex, total, setTotal}) {
     }
     
   return (
-    <button onClick = {handleClick}>See Your Results</button>
+    <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
   )
   }

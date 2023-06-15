@@ -12,7 +12,7 @@ function PreviousButton({questionIndex, setQuestionIndex}) {
     }
     
   return (
-    <button onClick = {handleClick}>Previous</button>
+    <button className="previous-button" onClick = {handleClick}>Previous</button>
   )
 }
 

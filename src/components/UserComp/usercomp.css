@@ -1,0 +1,16 @@
+:root {
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
+
+.questionnaire-body * {
+    /* border: 1px solid gray; */
+}
+
+.user-component-body {
+    background-color: var(--brunswick-green-color);
+    margin: 1rem auto;
+}

@@ -6,12 +6,16 @@
   --floral-white-color: #fcf9ed;
 }
 
-.Button {
-     width: 20rem;
-  height: 3.5rem;
-  grid-column: 10;
-  grid-row: 8;
-  background-color: var(--burnt-sienna-color);
-  color: var(--floral-white-color);
-  font-size: 1.5rem;
+.questionnaire-body * {
+    /* border: 1px solid gray; */
 }
+
+.questionnaire-body {
+    max-height: 100%;
+    max-width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--floral-white-color);
+}
+
