@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo20.png";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -11,19 +12,26 @@ function Navbar() {
         </li>
         <ul className="navbar-ul">
           <li>
-            <a href="../Rewards/Rewards.js">Rewards</a>
+            <Link to="../Rewards/Rewards.js">Rewards</Link>
           </li>
           <li>
-            <a href="../Questionnaire/Questionnaire.js">Questionnaire</a>
+            <Link to="../Questionnaire/Questionnaire">Questionnaire</Link>
           </li>
           <li>
-            <a href="../Become a member/Become a member.js">Become a member</a>
+            <Link to="../Become a member/Become a member.js">
+              Become a member
+            </Link>
           </li>
           <li>
-            <a href="../Sign in/Sign in.js">Sign in</a>
+            <Link to="../Sign in/Sign in.js">Sign in</Link>
           </li>
         </ul>
       </ul>
+      {/* <nav>
+        <li>
+          <Link to="/actions">Actions</Link>
+        </li>
+      </nav> */}
     </div>
   );
 }

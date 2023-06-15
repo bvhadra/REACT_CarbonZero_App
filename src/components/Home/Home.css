@@ -48,6 +48,10 @@ main {
   font-size: 1.5rem;
   z-index: 3;
 }
+.section-1-button #learn-more {
+  text-decoration: none;
+  color: var(--floral-white-color);
+}
 
 /* section 2, 3 and 4 grid containers */
 .section-2,
