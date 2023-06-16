@@ -31,13 +31,15 @@ export default function SeeResultsButton({ response, questionIndex, total, setTo
     // props.setTotal(newTotal);
     // console.log("total", newTotal);
     // console.log("SeeResultsButton clicked", newTotal);
-}
-        })
-        return console.log("SeeResultsButton clicked")
+
+      
+         console.log("SeeResultsButton clicked")
 // correct this file - not sure if we need console.log & correct number of curly brackets
-    }
+    
     
   return (
     <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
   )
 }
+
+

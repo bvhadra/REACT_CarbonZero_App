@@ -14,12 +14,12 @@ function App() {
   //paths object for routing files to be rendered by app component using react router
   const paths = {
     "/": "",
-    "/rewards": "/Rewards/Rewards",
-    "/questionnaire": "/Questionnaire/Questionnaire",
-    "/become a member": "/BecomeAMember/BecomeAMember",
-    "/sign in": "/SignIn/SignIn",
-    "/usercomp": "",
-    "/actions": ""
+    "/rewards": "/Rewards",
+    "/questionnaire": "/Questionnaire",
+    "/become a member": "/BecomeAMember",
+    "/sign in": "/SignIn",
+    // "/usercomp": "",
+    "/actions": "",
   };
  
   return (
@@ -27,15 +27,12 @@ function App() {
       <Routes>
         <Route path={paths["/"]} element={<Home />} />
         <Route path={paths["/rewards"]} element={<Rewards />} />
-        <Route path={paths["/questionnaire"]} element={<Questionnaire />} />
+        {/* <Route path={paths["/questionnaire"]} element={<Questionnaire />} /> */}
         <Route path={paths["/become a member"]} element={<BecomeAMember />} />
         <Route path={paths["/sign in"]} element={<SignIn />} />
-        <Route path={paths["/usercomp"]} element={<UserComp />} />
+        <Route path={paths["/questionnaire"]} element={<UserComp />} />
         <Route path={paths["/actions"]} element={<Actions />} />
       </Routes>
-      {/* <header className="App-header">
-        <UserComp />
-      </header> */}
     </div>
   );
 }

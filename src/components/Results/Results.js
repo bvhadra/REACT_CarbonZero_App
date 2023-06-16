@@ -39,7 +39,7 @@ const Results = ( { total } ) => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Paper>
         <Chart data={chartData}>
           <ArgumentAxis />
@@ -77,4 +77,4 @@ const Results = ( { total } ) => {
   );
 };
 
-export { Results };
+ export default Results ;

@@ -15,16 +15,16 @@ function Navbar() {
         </li>
         <ul className="navbar-ul">
           <li>
-            <Link to="../Rewards/Rewards">Rewards</Link>
+            <Link to="../Rewards">Rewards</Link>
           </li>
           <li>
-            <Link to="../Questionnaire/Questionnaire">Questionnaire</Link>
+            <Link to="../Questionnaire">Questionnaire</Link>
           </li>
           <li>
-            <Link to="../BecomeAMember/BecomeAMember">Become a member</Link>
+            <Link to="../BecomeAMember">Become a member</Link>
           </li>
           <li>
-            <Link to="../SignIn/SignIn">Sign in</Link>
+            <Link to="../SignIn">Sign in</Link>
           </li>
         </ul>
       </ul>
