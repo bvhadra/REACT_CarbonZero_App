@@ -7,7 +7,8 @@ import Questionnaire from "../UserComp/usercomp";
 import UserComp from "../UserComp/usercomp";
 import { Actions } from "../Actions/Actions";
 import "./App.css";
-
+import Results from "../Results/Results";
+import ResultsPage from "../ResultsPage/ResultsPage";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     "/sign in": "/SignIn",
     // "/usercomp": "",
     "/actions": "",
+    "/results": "/Results"
   };
  
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path={paths["/sign in"]} element={<SignIn />} />
         <Route path={paths["/questionnaire"]} element={<UserComp />} />
         <Route path={paths["/actions"]} element={<Actions />} />
+        <Route path={paths["/results"]} element={<ResultsPage/>} />
       </Routes>
     </div>
   );

@@ -10,7 +10,7 @@ import {
   Legend,
 } from '@devexpress/dx-react-chart-material-ui';
 import { Stack, Animation } from '@devexpress/dx-react-chart';
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
 
 
 // Take the results state and translate the value of each type of climate pollution to the graph data

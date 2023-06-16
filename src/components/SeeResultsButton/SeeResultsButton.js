@@ -1,5 +1,6 @@
 import React from "react";
 import questionsList from "../../lib/data";
+import { Link } from "react-router-dom";
 
 export default function SeeResultsButton({ response, questionIndex, total, setTotal }) {
   if (questionIndex !== questionsList.length - 1) {
@@ -38,8 +39,8 @@ export default function SeeResultsButton({ response, questionIndex, total, setTo
     
     
   return (
+    <Link to="../Results">
     <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
-  )
-}
-
+    </Link>
+  )}
 
