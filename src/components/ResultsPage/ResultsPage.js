@@ -6,7 +6,7 @@ function ResultsPage() {
   return (
     <div>
     <Navbar />
-    <Results response={response} total={total}/>
+    {/* <Results response={response} total={total}/> */}
     
     </div>
   )
