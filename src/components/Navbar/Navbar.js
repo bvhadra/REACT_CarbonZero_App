@@ -1,26 +1,30 @@
 import React from "react";
 import logo from "../../assets/logo20.png";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+
   return (
     <div className="header-div">
       <ul className="navbar">
         <li>
-          <img src={logo} alt="Carbon Zero Logo" className="logo" />
+          <Link to="/" id="logo-button">
+            <img src={logo} alt="Carbon Zero Logo" className="logo" />
+          </Link>
         </li>
         <ul className="navbar-ul">
           <li>
-            <a href="../Rewards/Rewards.js">Rewards</a>
+            <Link to="../Rewards/Rewards">Rewards</Link>
           </li>
           <li>
-            <a href="../Questionnaire/Questionnaire.js">Questionnaire</a>
+            <Link to="../Questionnaire/Questionnaire">Questionnaire</Link>
           </li>
           <li>
-            <a href="../Become a member/Become a member.js">Become a member</a>
+            <Link to="../BecomeAMember/BecomeAMember">Become a member</Link>
           </li>
           <li>
-            <a href="../Sign in/Sign in.js">Sign in</a>
+            <Link to="../SignIn/SignIn">Sign in</Link>
           </li>
         </ul>
       </ul>

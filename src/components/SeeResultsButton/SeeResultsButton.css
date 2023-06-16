@@ -6,12 +6,11 @@
   --floral-white-color: #fcf9ed;
 }
 
-.previous-button {
-  width: 30rem;
+ .see-results-button {
+     width: 20rem;
   height: 3.5rem;
   margin: 2rem auto;
-  background-color: none;
-  color: var(--burnt-sienna-color);
-  border: 0.2rem solid var(--burnt-sienna-color);
+  background-color: var(--burnt-sienna-color);
+  color: var(--floral-white-color);
   font-size: 1.5rem;
 }

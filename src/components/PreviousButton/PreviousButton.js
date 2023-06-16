@@ -1,4 +1,5 @@
 import React from 'react'
+import "./PreviousButton.css"
 
 function PreviousButton({questionIndex, setQuestionIndex}) {
 
@@ -11,7 +12,7 @@ function PreviousButton({questionIndex, setQuestionIndex}) {
     }
     
   return (
-    <button onClick = {handleClick}>Previous</button>
+    <button className="previous-button" onClick = {handleClick}>Previous</button>
   )
 }
 

@@ -1,12 +1,11 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 
-export function Actions() {
+export default function SignIn() {
   return (
     <>
       <Navbar />
-      <h1>HELLO WORLD!</h1>
-      <div>Actions</div>
+      <div>SignIn</div>
     </>
   );
 }

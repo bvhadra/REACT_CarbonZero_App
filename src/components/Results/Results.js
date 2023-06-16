@@ -10,6 +10,7 @@ import {
   Legend,
 } from '@devexpress/dx-react-chart-material-ui';
 import { Stack, Animation } from '@devexpress/dx-react-chart';
+import Navbar from '../Navbar/Navbar';
 
 
 // Take the results state and translate the value of each type of climate pollution to the graph data
@@ -37,22 +38,43 @@ const Results = ( { total } ) => {
   const chartData = energyConsumption;
 
   return (
-    <Paper>
-      <Chart data={chartData}>
-        <ArgumentAxis />
-        <ValueAxis max={2400} />
+    <>
+      <Navbar />
+      <Paper>
+        <Chart data={chartData}>
+          <ArgumentAxis />
+          <ValueAxis max={2400} />
 
-        <BarSeries name="Travel" valueField="Travel" argumentField="country" />
-        <BarSeries name="Food" valueField="Food" argumentField="country" />
-        <BarSeries name="Energy" valueField="Energy" argumentField="country" />
-        <BarSeries name="Clothing" valueField="Clothing" argumentField="country" />
-        <Animation />
-        <Legend position="bottom" rootComponent={Root} labelComponent={Label} />
-        <Title text="Your Carbon Footprint Comparison" />
-        <Stack stacks={[{ series: ['Travel', 'Food', 'Energy', 'Clothing'] }]} />
-      </Chart>
-    </Paper>
+          <BarSeries
+            name="Travel"
+            valueField="Travel"
+            argumentField="country"
+          />
+          <BarSeries name="Food" valueField="Food" argumentField="country" />
+          <BarSeries
+            name="Energy"
+            valueField="Energy"
+            argumentField="country"
+          />
+          <BarSeries
+            name="Clothing"
+            valueField="Clothing"
+            argumentField="country"
+          />
+          <Animation />
+          <Legend
+            position="bottom"
+            rootComponent={Root}
+            labelComponent={Label}
+          />
+          <Title text="Your Carbon Footprint Comparison" />
+          <Stack
+            stacks={[{ series: ["Travel", "Food", "Energy", "Clothing"] }]}
+          />
+        </Chart>
+      </Paper>
+    </>
   );
 };
 
-export default Results;
+export { Results };
