@@ -12,7 +12,7 @@ export default function UserComp() {
     food: 0,
     energy: 0,
   });
-
+      
   return (
     <div className="user-component-body">
       <Navbar />

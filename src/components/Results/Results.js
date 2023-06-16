@@ -12,14 +12,9 @@ import {
 import { Stack, Animation } from '@devexpress/dx-react-chart';
 import Navbar from '../Navbar/Navbar';
 
-export const energyConsumption = [
-    {
-      country: 'User', Travel: 59.8, Food: 937.6, Energy: 582, Clothing: 564.3,
-    }, {
-      country: 'Average UK', Travel: 45, Food: 600, Energy: 400, Clothing: 500,
-    }, {
-      country: 'Average Worldwide', Travel: 35, Food: 400, Energy: 250, Clothing: 100,
-    }];
+
+// Take the results state and translate the value of each type of climate pollution to the graph data
+
 
 const Root = props => (
   <Legend.Root {...props} sx={{ display: 'flex', margin: 'auto', flexDirection: 'row' }} />
@@ -28,7 +23,18 @@ const Label = props => (
   <Legend.Label {...props} sx={{ whiteSpace: 'nowrap' }} />
 );
 
-const Results = () => {
+const Results = ( { total } ) => {
+
+ const energyConsumption = [
+    {
+      country: 'User', Travel: total.travel, Food: total.food, Energy: total.energy, Clothing: 4,
+    }, {
+      country: 'Average UK', Travel: 1, Food: 2, Energy: 3, Clothing: 4,
+    }, {
+      country: 'Average Worldwide', Travel: 1, Food: 2, Energy: 3, Clothing: 4,
+    }];
+
+
   const chartData = energyConsumption;
 
   return (
