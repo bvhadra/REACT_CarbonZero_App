@@ -5,9 +5,10 @@ import PreviousButton from "../PreviousButton/PreviousButton";
 import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 import Results from '../Results/Results'
 import "./Questionnaire.css"
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
-export default function Questionnaire({ response, setResponse, total, setTotal }) {
+export default function Questionnaire({ response, setResponse}) {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   return (
@@ -24,9 +25,11 @@ export default function Questionnaire({ response, setResponse, total, setTotal }
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
-      <SeeResultsButton total={total} setTotal={setTotal} setQuestionIndex={setQuestionIndex}
+      <SeeResultsButton setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex} response={response}/>
-      <Results response={response} total={total}/>
+   
+      {/* <Results response={response} total={total}/> */}
+
     </div>
   );
 }

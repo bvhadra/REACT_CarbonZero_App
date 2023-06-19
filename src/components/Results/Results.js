@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Paper from '@mui/material/Paper';
+import { TotalContext } from '../../context/TotalContext';
+
 //import {Routes, Route, Link} from "react-router-dom";
 import {
   Chart,
@@ -23,7 +25,15 @@ const Label = props => (
   <Legend.Label {...props} sx={{ whiteSpace: 'nowrap' }} />
 );
 
-const Results = ( { total } ) => {
+const Results = () => {
+
+  const total =   {
+  travel: 10,
+  food: 10,
+  energy: 10,
+};
+
+
 
  const energyConsumption = [
     {

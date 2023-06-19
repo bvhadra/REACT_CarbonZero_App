@@ -1,7 +1,15 @@
 import React from "react";
 import questionsList from "../../lib/data";
+import { useContext } from "react";
+import { TotalContext } from "../../context/TotalContext";
+import { Link } from "react-router-dom";
 
-export default function SeeResultsButton({ response, questionIndex, total, setTotal }) {
+
+
+export default function SeeResultsButton({ response, questionIndex }) {
+
+  const { total, setTotal } = useContext(TotalContext)
+
   if (questionIndex !== questionsList.length - 1) {
     return null;
   }
@@ -20,25 +28,21 @@ export default function SeeResultsButton({ response, questionIndex, total, setTo
         }
       });
   
-      return newTotal;
+      if (JSON.stringify(newTotal) !== JSON.stringify(prevTotal)) {
+        return newTotal;
+      }
+
     });
-    console.log(total)
   };
-    
-    // console.log("before" + JSON.stringify(newTotal))
-
-    // // Update the state with the new total
-    // props.setTotal(newTotal);
-    // console.log("total", newTotal);
-    // console.log("SeeResultsButton clicked", newTotal);
-
-      
-         console.log("SeeResultsButton clicked")
-// correct this file - not sure if we need console.log & correct number of curly brackets
     
     
   return (
+    <>
     <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
+    <button>
+    <Link to="../ResultPage">Go To Page</Link>
+    </button>
+    </>
   )
 }
 
