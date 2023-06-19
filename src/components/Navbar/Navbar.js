@@ -13,6 +13,9 @@ function Navbar() {
             <img src={logo} alt="Carbon Zero Logo" className="logo" />
           </Link>
         </li>
+        <li>
+          <span class="material-symbols-outlined">Menu</span>
+        </li>
         <ul className="navbar-ul">
           <li>
             <Link to="../Rewards">Rewards</Link>
