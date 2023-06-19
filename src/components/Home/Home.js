@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
 import "../Navbar/Navbar.css"
-import foot from "../../assets/foot.png";
+import foot from "../../assets/foot1433.png";
 import amazon from "../../assets/amazon-forest.png";
 import travel from "../../assets/air-travel.png";
 import industry from "../../assets/industrial-polution.png";
