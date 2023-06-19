@@ -40,6 +40,7 @@ const Results = ( { total } ) => {
   return (
     <>
       {/* <Navbar /> */}
+      <h1>See Your Results</h1>
       <Paper>
         <Chart data={chartData}>
           <ArgumentAxis />

@@ -34,7 +34,7 @@ function App() {
         <Route path={paths["/sign in"]} element={<SignIn />} />
         <Route path={paths["/questionnaire"]} element={<UserComp />} />
         <Route path={paths["/actions"]} element={<Actions />} />
-        <Route path={paths["/results"]} element={<ResultsPage/>} />
+        <Route path={paths["/results"]} element={<Results/>} />
       </Routes>
     </div>
   );

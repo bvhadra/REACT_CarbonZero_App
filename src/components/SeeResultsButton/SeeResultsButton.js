@@ -1,6 +1,7 @@
 import React from "react";
 import questionsList from "../../lib/data";
 import { Link } from "react-router-dom";
+import Results from "../Results/Results";
 
 export default function SeeResultsButton({ response, questionIndex, total, setTotal }) {
   if (questionIndex !== questionsList.length - 1) {
@@ -29,18 +30,21 @@ export default function SeeResultsButton({ response, questionIndex, total, setTo
     // console.log("before" + JSON.stringify(newTotal))
 
     // // Update the state with the new total
-    // props.setTotal(newTotal);
+    // setTotal(newTotal);
     // console.log("total", newTotal);
     // console.log("SeeResultsButton clicked", newTotal);
 
       
-         console.log("SeeResultsButton clicked")
+  console.log("SeeResultsButton clicked")
 // correct this file - not sure if we need console.log & correct number of curly brackets
     
     
   return (
+    <div>
+    <Results response={response} total={total}/>
     <Link to="../Results">
     <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
     </Link>
+    </div>
   )}
 

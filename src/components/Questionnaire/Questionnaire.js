@@ -3,7 +3,7 @@ import Button from "../Button/button";
 import questionsList from "../../lib/data";
 import PreviousButton from "../PreviousButton/PreviousButton";
 import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
-// import Results from '../Results/Results'
+import Results from '../Results/Results'
 import "./Questionnaire.css"
 
 

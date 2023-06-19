@@ -1,4 +1,6 @@
 /* global styles */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,8 @@
   /* border: 1px solid #ccc; */
 }
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   height: auto;
   width: 100% !important;
