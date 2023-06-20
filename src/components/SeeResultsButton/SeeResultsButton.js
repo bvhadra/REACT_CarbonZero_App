@@ -3,7 +3,7 @@ import questionsList from "../../lib/data";
 import { useContext } from "react";
 import { TotalContext } from "../../context/TotalContext";
 import { Link } from "react-router-dom";
-
+import "./SeeResultsButton.css";
 
 
 export default function SeeResultsButton({ response, questionIndex }) {
@@ -30,18 +30,22 @@ export default function SeeResultsButton({ response, questionIndex }) {
   
       if (JSON.stringify(newTotal) !== JSON.stringify(prevTotal)) {
         return newTotal;
+      } else {
+        // If the new state is the same as the previous state, return null or undefined
+        // to prevent the infinite loop
+        return null;
       }
-
     });
   };
     
     
   return (
     <>
-    <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
-    <button>
-    <Link to="../ResultPage">Go To Page</Link>
+    <Link to="/ResultPage">
+    <button className="see-results-button" onClick = {handleClick}>
+    See Your Results
     </button>
+    </Link>
     </>
   )
 }

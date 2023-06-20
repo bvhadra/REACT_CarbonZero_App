@@ -5,7 +5,7 @@ import BecomeAMember from "../BecomeAMember/BecomeAMember";
 import SignIn from "../SignIn/SignIn";
 import Questionnaire from "../UserComp/usercomp";
 import UserComp from "../UserComp/usercomp";
-import { Actions } from "../Actions/Actions";
+import Actions from "../Actions/Actions";
 import "./App.css";
 import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
@@ -19,6 +19,7 @@ function App() {
     travel: 0,
     food: 0,
     energy: 0,
+    clothing: 0,
   });
   
 
@@ -30,7 +31,7 @@ function App() {
     "/become a member": "/BecomeAMember",
     "/sign in": "/SignIn",
     // "/usercomp": "",
-    "/actions": "",
+    "/actions": "/Actions",
   };
  
   return (

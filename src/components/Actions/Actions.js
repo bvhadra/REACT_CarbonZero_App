@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 
-export function Actions() {
+export default function Actions() {
   return (
     <>
       <Navbar />

@@ -54,6 +54,14 @@ const questionsList = [
         answers: [ "0-2", "3-6", "7-11", "12+" ], 
         calculations: [ 0, 1, 2, 3 ],
         response: 0
+    },
+    {
+        id: 7,
+        category: "clothing",
+        question: "How many brand new clothes do you buy on a monthly basis?",
+        answers: [ "None", "1-3", "4-6", "7+" ], 
+        calculations: [ 0, 1, 2, 3 ],
+        response: 0
     }
 ];
 
