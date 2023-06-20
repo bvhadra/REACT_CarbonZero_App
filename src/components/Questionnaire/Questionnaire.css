@@ -1,0 +1,29 @@
+:root {
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
+
+/* .questionnaire-body * {
+    /* border: 1px solid gray; 
+} */
+
+.questionnaire-body {
+    height: 100%;
+    max-width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--floral-white-color);
+}
+
+.previous-button-and-results-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+

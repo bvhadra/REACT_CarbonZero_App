@@ -1,0 +1,18 @@
+:root {
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
+.question-title {
+    margin: 2rem 0px;
+}
+ .answer-button {
+  width: 20rem;
+  height: 3.5rem;
+  margin: 1rem auto;
+  background-color: var(--brunswick-green-color);
+  color: var(--floral-white-color);
+  font-size: 1.5rem;
+}

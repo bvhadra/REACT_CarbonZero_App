@@ -1,0 +1,17 @@
+:root {
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
+
+.previous-button {
+  width: 30rem;
+  height: 3.5rem;
+  margin: 2rem auto;
+  background-color: none;
+  color: var(--burnt-sienna-color);
+  border: 0.2rem solid var(--burnt-sienna-color);
+  font-size: 1.5rem;
+}
