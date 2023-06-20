@@ -46,7 +46,7 @@ const questionsList = [
         category: "energy",
         question: "How often do you use air conditioning or heating at home?",
         answers: [ "Never", "Occasionally", "Regularly", "All the time" ], 
-        calculations: [ 0, 0.2, 0.8, 1.6 ],
+        calculations: [ 0, 0.5, 1, 1.5 ],
         response: 0
     },
     {
@@ -54,7 +54,7 @@ const questionsList = [
         category: "energy",
         question: "How many hours a day do you use an electronic device?",
         answers: [ "0-2", "3-6", "7-11", "12+" ], 
-        calculations: [ 0.02, 0.05, 0.08, 0.1 ],
+        calculations: [ 0.1, 0.3, 0.5, 0.7 ],
         response: 0
     },
     {
