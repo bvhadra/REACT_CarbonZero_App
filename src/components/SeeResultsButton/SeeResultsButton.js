@@ -8,7 +8,7 @@ import "./SeeResultsButton.css";
 
 export default function SeeResultsButton({ response, questionIndex, buttonClicked }) {
 
-  const { total, setTotal } = useContext(TotalContext)
+  const { setTotal } = useContext(TotalContext)
 
   if (questionIndex !== questionsList.length - 1) {
     return null;
