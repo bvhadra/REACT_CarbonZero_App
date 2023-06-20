@@ -6,3 +6,7 @@
 //   const linkElement = screen.getByText(/learn react/i);
 //   expect(linkElement).toBeInTheDocument();
 // });
+
+test("Fake test", function () {
+    expect(true).toEqual(true);
+  });
