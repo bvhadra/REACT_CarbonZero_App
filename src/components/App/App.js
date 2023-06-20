@@ -32,7 +32,7 @@ function App() {
     "/become a member": "/BecomeAMember",
     "/sign in": "/SignIn",
     // "/usercomp": "",
-    "/results": "/Results"
+    "/results": "/Results",
     "/actions": "/Actions",
 
   };
