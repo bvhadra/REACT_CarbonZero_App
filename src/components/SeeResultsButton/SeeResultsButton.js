@@ -27,6 +27,7 @@ export default function SeeResultsButton({ response, questionIndex, buttonClicke
     });
   };
     
+
   if (questionIndex === questionsList.length - 1 && buttonClicked === true) {
   return (
     <>
@@ -39,5 +40,3 @@ export default function SeeResultsButton({ response, questionIndex, buttonClicke
   )
   }
 }
-
-

@@ -1,4 +1,6 @@
 /* global styles */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,37 @@
   /* border: 1px solid #ccc; */
 }
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   height: auto;
   width: 100% !important;
+}
+
+/* media query for mobile app styles SHOWING hamburger icon, when hamburger has NOT been clicked */
+@media screen and (max-width: 425px) {
+  .navbar {
+    width: 100%;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--floral-white-color);
+    padding-bottom: 0.25rem;
+  }
+  .navbar li #logo-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar li #logo-button:hover {
+    border: none;
+  }
+  .navbar-ul * {
+    display: none;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+  }
 }

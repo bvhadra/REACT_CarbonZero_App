@@ -7,6 +7,7 @@ import Questionnaire from "../UserComp/usercomp";
 import UserComp from "../UserComp/usercomp";
 import Actions from "../Actions/Actions";
 import "./App.css";
+import Results from "../Results/Results";
 import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
 import { useState } from 'react'
@@ -31,7 +32,9 @@ function App() {
     "/become a member": "/BecomeAMember",
     "/sign in": "/SignIn",
     // "/usercomp": "",
+    "/results": "/Results"
     "/actions": "/Actions",
+
   };
  
   return (

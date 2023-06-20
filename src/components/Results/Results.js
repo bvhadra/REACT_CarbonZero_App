@@ -42,6 +42,8 @@ const Results = () => {
 
   return (
     <>
+
+      <h1>See Your Results</h1>
       <Paper>
         <Chart data={chartData}>
           {renderAxis && <ArgumentAxis />}
