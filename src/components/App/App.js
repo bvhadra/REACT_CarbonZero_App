@@ -3,11 +3,11 @@ import Home from "../Home/Home";
 import Rewards from "../Rewards/Rewards";
 import BecomeAMember from "../BecomeAMember/BecomeAMember";
 import SignIn from "../SignIn/SignIn";
-import Questionnaire from "../UserComp/usercomp";
+// import Questionnaire from "../UserComp/usercomp";
 import UserComp from "../UserComp/usercomp";
 import Actions from "../Actions/Actions";
 import "./App.css";
-import Results from "../Results/Results";
+// import Results from "../Results/Results";
 import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
 import { useState } from 'react'
