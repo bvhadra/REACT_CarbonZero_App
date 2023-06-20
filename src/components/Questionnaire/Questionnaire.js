@@ -15,7 +15,7 @@ export default function Questionnaire({ response, setResponse}) {
   const [completed, setCompleted] = useState(0);
 
   useEffect(() => {
-    if (buttonClicked === true) {
+    if (buttonClicked === true && questionIndex === questionsList.length - 1) {
       setCompleted(100);
     }
     else {
