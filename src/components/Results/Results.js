@@ -52,6 +52,7 @@ const Results = () => {
             valueField="Travel"
             argumentField="country"
           />
+          
           <BarSeries name="Food" valueField="Food" argumentField="country" />
           <BarSeries
             name="Energy"
