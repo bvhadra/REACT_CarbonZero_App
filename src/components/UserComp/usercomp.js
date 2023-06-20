@@ -8,8 +8,6 @@ import "./usercomp.css"
 export default function UserComp() {
   const [response, setResponse] = useState(questionsList);
 
-
-
   return (
     <div className="user-component-body">
 

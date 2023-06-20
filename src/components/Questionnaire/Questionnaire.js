@@ -10,24 +10,19 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 
 export default function Questionnaire({ response, setResponse}) {
   const [questionIndex, setQuestionIndex] = useState(0);
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   const [completed, setCompleted] = useState(0);
 
-  // useEffect(() => {
-  //   if (questionIndex === questionsList.length - 1) {
-  //     setCompleted(100);
-  //   }
-  //   setCompleted(Math.floor((questionIndex / (questionsList.length) * 100)));
-  // }, [questionIndex]);
-
   useEffect(() => {
-    if (questionIndex === questionsList.length - 1) {
+    if (buttonClicked === true) {
       setCompleted(100);
-    } else {
+    }
+    else {
       const completionPercentage = Math.floor(((questionIndex) / questionsList.length) * 100);
       setCompleted(completionPercentage);
     }
-  }, [questionIndex]);
+  }, [questionIndex, buttonClicked]);
   
 
   return (
@@ -38,6 +33,8 @@ export default function Questionnaire({ response, setResponse}) {
         questionIndex={questionIndex}
         response={response}
         setResponse={setResponse}
+        buttonClicked={buttonClicked}
+        setButtonClicked={setButtonClicked}
       />
 <div className="previous-button-and-results-button">
       <PreviousButton
@@ -46,7 +43,7 @@ export default function Questionnaire({ response, setResponse}) {
       />
 
       <SeeResultsButton setQuestionIndex={setQuestionIndex}
-        questionIndex={questionIndex} response={response}/>
+        questionIndex={questionIndex} response={response} buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>
 
 </div>
 

@@ -6,17 +6,13 @@ import { Link } from "react-router-dom";
 import "./SeeResultsButton.css";
 
 
-export default function SeeResultsButton({ response, questionIndex }) {
+export default function SeeResultsButton({ response, questionIndex, buttonClicked }) {
 
   const { total, setTotal } = useContext(TotalContext)
 
   if (questionIndex !== questionsList.length - 1) {
     return null;
   }
-
-  // Initialise the total as an object
-  // Note: This should actually be done in the component's state where `total` is declared.
-  // total = {travel: 0, food: 0, energy: 0}
 
   const handleClick = () => {
     setTotal((prevTotal) => {
@@ -27,18 +23,11 @@ export default function SeeResultsButton({ response, questionIndex }) {
           newTotal[item.category] += item.response;
         }
       });
-  
-      if (JSON.stringify(newTotal) !== JSON.stringify(prevTotal)) {
-        return newTotal;
-      } else {
-        // If the new state is the same as the previous state, return null or undefined
-        // to prevent the infinite loop
-        return null;
-      }
+      return newTotal;
     });
   };
     
-    
+  if (questionIndex === questionsList.length - 1 && buttonClicked === true) {
   return (
     <>
     <Link to="/ResultPage">
@@ -48,6 +37,7 @@ export default function SeeResultsButton({ response, questionIndex }) {
     </Link>
     </>
   )
+  }
 }
 
 

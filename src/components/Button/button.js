@@ -2,7 +2,7 @@ import React from "react";
 import questionsList from "../../lib/data";
 import "./button.css"
 
-export default function Button({ data, questionIndex, setQuestionIndex, response, setResponse }) {
+export default function Button({ data, questionIndex, setQuestionIndex, response, setResponse, setButtonClicked }) {
   const { answers, question, calculations } = data;
 //   console.log(calculations);
 
@@ -10,6 +10,11 @@ export default function Button({ data, questionIndex, setQuestionIndex, response
     if (questionIndex !== questionsList.length - 1) {
     setQuestionIndex(questionIndex + 1);
     }
+
+    if (questionIndex === questionsList.length - 1) {
+      setButtonClicked(true);
+    }
+    
     // setResponse([...response, calculations[index]]);
    setResponse(response.map((item, idx) => (idx === questionIndex ? { ...item, response: calculations[index] }  : item)));
     console.log(response);

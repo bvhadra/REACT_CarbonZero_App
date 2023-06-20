@@ -4,9 +4,6 @@ import Navbar from '../Navbar/Navbar'
 
 export default function Resultpage() {
 
-    // handleClick = () => {
-    // }
-
     return (
         <>
             <Navbar />
