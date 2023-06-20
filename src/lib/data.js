@@ -1,18 +1,20 @@
+//carbon emissions in tonnes/year
+
 const questionsList = [
     {
         id: 0,
         category: "travel",
         question: "How often do you travel by car in a week?",
-        answers: [ "None", "1-2 times", "3-5 times", "More than 5 times" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        answers: [ "None", "1-3 times", "4-6 times", "More than 6 times" ], 
+        calculations: [ 0, 0.5, 1, 2 ],
         response: 0
     },
     {
         id: 1,
         category: "travel",
         question: "How often do you use public transportation in a week?",
-        answers: [ "None", "1-2 times", "3-5 times", "More than 5 times" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        answers: [ "None", "1-3 times", "4-6 times", "More than 6 times" ], 
+        calculations: [ 0, 0.2, 0.7, 1 ],
         response: 0
     },
     {
@@ -20,7 +22,7 @@ const questionsList = [
         category: "travel",
         question: "How often do you take flights in a year?",
         answers: [ "None", "1-2 times", "3-5 times", "More than 5 times" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        calculations: [ 0, 0.5, 1.5, 3],
         response: 0
     },
     {
@@ -28,7 +30,7 @@ const questionsList = [
         category: "food",
         question: "How often do you consume red meat in a week?",
         answers: [ "None", "1-2 times", "3-4 times", "More than 4 times" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        calculations: [ 0, 0.5, 1, 2 ],
         response: 0
     },
     {
@@ -36,7 +38,7 @@ const questionsList = [
         category: "food",
         question: "How often do you eat seafood in a week?",
         answers: [ "None", "1-2 times", "3-4 times", "More than 4 times" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        calculations: [ 0, 0.4, 0.8, 1.5 ],
         response: 0
     },
     {
@@ -44,7 +46,7 @@ const questionsList = [
         category: "energy",
         question: "How often do you use air conditioning or heating at home?",
         answers: [ "Never", "Occasionally", "Regularly", "All the time" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        calculations: [ 0, 1, 1.5, 2.5 ],
         response: 0
     },
     {
@@ -52,7 +54,15 @@ const questionsList = [
         category: "energy",
         question: "How many hours a day do you use an electronic device?",
         answers: [ "0-2", "3-6", "7-11", "12+" ], 
-        calculations: [ 0, 1, 2, 3 ],
+        calculations: [ 0.3, 0.6, 0.9, 2.4 ],
+        response: 0
+    },
+    {
+        id: 7,
+        category: "clothing",
+        question: "How many brand new clothes do you buy on a monthly basis?",
+        answers: [ "None", "1-3", "4-6", "7+" ], 
+        calculations: [ 0, 0.5, 1.2, 2.4 ],
         response: 0
     }
 ];

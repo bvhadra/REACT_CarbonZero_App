@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Paper from '@mui/material/Paper';
-//import {Routes, Route, Link} from "react-router-dom";
+import { TotalContext } from '../../context/TotalContext';
+
 import {
   Chart,
   ArgumentAxis,
@@ -10,11 +11,6 @@ import {
   Legend,
 } from '@devexpress/dx-react-chart-material-ui';
 import { Stack, Animation } from '@devexpress/dx-react-chart';
-// import Navbar from '../Navbar/Navbar';
-
-
-// Take the results state and translate the value of each type of climate pollution to the graph data
-
 
 const Root = props => (
   <Legend.Root {...props} sx={{ display: 'flex', margin: 'auto', flexDirection: 'row' }} />
@@ -23,34 +19,42 @@ const Label = props => (
   <Legend.Label {...props} sx={{ whiteSpace: 'nowrap' }} />
 );
 
-const Results = ( { total } ) => {
+const Results = () => {
+  const [renderAxis, setRenderAxis] = useState(false);
 
- const energyConsumption = [
+  useEffect(() => {
+    setRenderAxis(true);
+  }, []);
+
+  const { total } = useContext(TotalContext);
+
+  const energyConsumption = [
     {
-      country: 'User', Travel: total.travel, Food: total.food, Energy: total.energy, Clothing: 4,
+      country: 'User', Travel: total.travel, Food: total.food, Energy: total.energy, Clothing: total.clothing,
     }, {
-      country: 'Average UK', Travel: 1, Food: 2, Energy: 3, Clothing: 4,
+      country: 'Average UK', Travel: 2.8, Food: 1.5, Energy: 4.7, Clothing: 0.9,
     }, {
-      country: 'Average Worldwide', Travel: 1, Food: 2, Energy: 3, Clothing: 4,
-    }];
-
+      country: 'Average Worldwide', Travel: 2.5, Food: 1.9, Energy: 4.8, Clothing: 1,
+    }
+  ];
 
   const chartData = energyConsumption;
 
   return (
     <>
-      {/* <Navbar /> */}
+
       <h1>See Your Results</h1>
       <Paper>
         <Chart data={chartData}>
-          <ArgumentAxis />
-          <ValueAxis max={2400} />
+          {renderAxis && <ArgumentAxis />}
+          {renderAxis && <ValueAxis max={2400} />}
 
           <BarSeries
             name="Travel"
             valueField="Travel"
             argumentField="country"
           />
+
           <BarSeries name="Food" valueField="Food" argumentField="country" />
           <BarSeries
             name="Energy"
@@ -78,4 +82,4 @@ const Results = ( { total } ) => {
   );
 };
 
- export default Results ;
+export default Results;

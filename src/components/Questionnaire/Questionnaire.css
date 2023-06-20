@@ -19,3 +19,11 @@
     background-color: var(--floral-white-color);
 }
 
+.previous-button-and-results-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+

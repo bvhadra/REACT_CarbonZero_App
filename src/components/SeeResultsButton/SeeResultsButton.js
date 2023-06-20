@@ -1,16 +1,18 @@
 import React from "react";
 import questionsList from "../../lib/data";
+import { useContext } from "react";
+import { TotalContext } from "../../context/TotalContext";
 import { Link } from "react-router-dom";
-import Results from "../Results/Results";
+import "./SeeResultsButton.css";
 
-export default function SeeResultsButton({ response, questionIndex, total, setTotal }) {
+
+export default function SeeResultsButton({ response, questionIndex, buttonClicked }) {
+
+  const { total, setTotal } = useContext(TotalContext)
+
   if (questionIndex !== questionsList.length - 1) {
     return null;
   }
-
-  // Initialise the total as an object
-  // Note: This should actually be done in the component's state where `total` is declared.
-  // total = {travel: 0, food: 0, energy: 0}
 
   const handleClick = () => {
     setTotal((prevTotal) => {
@@ -21,30 +23,20 @@ export default function SeeResultsButton({ response, questionIndex, total, setTo
           newTotal[item.category] += item.response;
         }
       });
-  
       return newTotal;
     });
-    console.log(total)
   };
     
-    // console.log("before" + JSON.stringify(newTotal))
 
-    // // Update the state with the new total
-    // setTotal(newTotal);
-    // console.log("total", newTotal);
-    // console.log("SeeResultsButton clicked", newTotal);
-
-      
-  console.log("SeeResultsButton clicked")
-// correct this file - not sure if we need console.log & correct number of curly brackets
-    
-    
+  if (questionIndex === questionsList.length - 1 && buttonClicked === true) {
   return (
-    <div>
-    <Results response={response} total={total}/>
-    <Link to="../Results">
-    <button className="see-results-button" onClick = {handleClick}>See Your Results</button>
+    <>
+    <Link to="/ResultPage">
+    <button className="see-results-button" onClick = {handleClick}>
+    See Your Results
+    </button>
     </Link>
-    </div>
-  )}
-
+    </>
+  )
+  }
+}

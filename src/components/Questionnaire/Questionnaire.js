@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../Button/button";
 import questionsList from "../../lib/data";
 import PreviousButton from "../PreviousButton/PreviousButton";
 import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 import Results from '../Results/Results'
 import "./Questionnaire.css"
+import ProgressBar from "../ProgressBar/ProgressBar";
 
 
-export default function Questionnaire({ response, setResponse, total, setTotal }) {
+export default function Questionnaire({ response, setResponse}) {
   const [questionIndex, setQuestionIndex] = useState(0);
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  const [completed, setCompleted] = useState(0);
+
+  useEffect(() => {
+    if (buttonClicked === true) {
+      setCompleted(100);
+    }
+    else {
+      const completionPercentage = Math.floor(((questionIndex) / questionsList.length) * 100);
+      setCompleted(completionPercentage);
+    }
+  }, [questionIndex, buttonClicked]);
+  
 
   return (
     <div className="questionnaire-body">
@@ -18,15 +33,21 @@ export default function Questionnaire({ response, setResponse, total, setTotal }
         questionIndex={questionIndex}
         response={response}
         setResponse={setResponse}
+        buttonClicked={buttonClicked}
+        setButtonClicked={setButtonClicked}
       />
-
+<div className="previous-button-and-results-button">
       <PreviousButton
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
-      <SeeResultsButton total={total} setTotal={setTotal} setQuestionIndex={setQuestionIndex}
-        questionIndex={questionIndex} response={response}/>
-      {/* <Results response={response} total={total}/> */}
+
+      <SeeResultsButton setQuestionIndex={setQuestionIndex}
+        questionIndex={questionIndex} response={response} buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>
+
+</div>
+
+<ProgressBar bgcolor={"#29524a"} completed={completed} />
     </div>
   );
 }
