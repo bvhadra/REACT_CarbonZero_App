@@ -32,9 +32,9 @@ const Results = () => {
     {
       country: 'User', Travel: total.travel, Food: total.food, Energy: total.energy, Clothing: total.clothing,
     }, {
-      country: 'Average UK', Travel: 1, Food: 2, Energy: 3, Clothing: 4,
+      country: 'Average UK', Travel: 2.8, Food: 1.5, Energy: 4.7, Clothing: 0.9,
     }, {
-      country: 'Average Worldwide', Travel: 1, Food: 2, Energy: 3, Clothing: 4,
+      country: 'Average Worldwide', Travel: 2.5, Food: 1.9, Energy: 4.8, Clothing: 1,
     }
   ];
 
@@ -52,7 +52,7 @@ const Results = () => {
             valueField="Travel"
             argumentField="country"
           />
-          
+
           <BarSeries name="Food" valueField="Food" argumentField="country" />
           <BarSeries
             name="Energy"
