@@ -5,13 +5,13 @@ import { TotalContext } from '../../context/TotalContext';
 import {
   Chart,
   ArgumentAxis,
-  ValueAxis,
+  // ValueAxis,
   BarSeries,
   // LineSeries,
   Title,
   Legend,
 } from '@devexpress/dx-react-chart-material-ui';
-import { Stack, Animation} from '@devexpress/dx-react-chart';
+import { Stack } from '@devexpress/dx-react-chart';
 
 const Root = props => (
   <Legend.Root {...props} 
@@ -69,12 +69,12 @@ const Results = () => {
      > {/* Adjust the height and padding values as needed */}
         <Chart data={chartData} height={600}> {/* Set the desired height of the chart */}
           {renderAxis && <ArgumentAxis />}
-          {renderAxis && <ValueAxis max={2400} />}
+          {/* {renderAxis && <ValueAxis max={2400} />} */}
           <BarSeries name="Travel" valueField="Travel" argumentField="country" />
           <BarSeries name="Food" valueField="Food" argumentField="country" />
           <BarSeries name="Energy" valueField="Energy" argumentField="country" />
           <BarSeries name="Clothing" valueField="Clothing" argumentField="country" />
-          <Animation />
+          {/* <Animation /> */}
           <Legend position="bottom" rootComponent={Root} labelComponent={Label} />
           <Title text="Your Carbon Footprint Comparison" />
           <Stack stacks={[{ series: ['Travel', 'Food', 'Energy', 'Clothing'] }]} />
