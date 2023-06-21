@@ -11,6 +11,8 @@ import "./App.css";
 import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
 import { useState } from 'react'
+import Action from "../Action/Action";
+
 
 
 
@@ -48,6 +50,7 @@ function App() {
         <Route path={paths["/sign in"]} element={<SignIn />} />
         <Route path={paths["/questionnaire"]} element={<UserComp />} />
         <Route path={paths["/actions"]} element={<Actions />} />
+        <Route path="/Actions/:id" element={<Action />} />
         <Route path="/ResultPage" element={<ResultPage />} />
       </Routes>
     </div>
