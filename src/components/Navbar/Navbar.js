@@ -1,10 +1,15 @@
 import React from "react";
+import { useContext } from "react";
 import logo from "../../assets/logo20.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { TotalContext } from "../../context/TotalContext";
 
 function Navbar() {
-
+  const { setTotal } = useContext(TotalContext)
+  const handleClick = () => {
+    setTotal({ travel: 0, food: 0, energy: 0, clothing: 0 });
+  };
   return (
     <div className="header-div">
       <ul className="navbar">
@@ -20,7 +25,7 @@ function Navbar() {
           <li>
             <Link to="../Rewards">Rewards</Link>
           </li>
-          <li>
+          <li onClick = {handleClick}>
             <Link to="../Questionnaire">Questionnaire</Link>
           </li>
           <li>

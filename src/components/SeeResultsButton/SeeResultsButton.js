@@ -17,12 +17,14 @@ export default function SeeResultsButton({ response, questionIndex, buttonClicke
   const handleClick = () => {
     setTotal((prevTotal) => {
       let newTotal = { ...prevTotal };
+      // let newTotal = prevTotal;
   
       response.forEach((item) => {
         if (newTotal.hasOwnProperty(item.category)) {
           newTotal[item.category] += item.response;
         }
       });
+
       return newTotal;
     });
   };

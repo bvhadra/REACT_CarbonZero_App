@@ -14,15 +14,20 @@ import {
 import { Stack, Animation} from '@devexpress/dx-react-chart';
 
 const Root = props => (
-  <Legend.Root {...props} sx={{ display: 'flex', margin: 'auto', flexDirection: 'row' }} />
+  <Legend.Root {...props} 
+  sx={{ display: 'flex', margin: 'auto', flexDirection: 'row' }}/>
 );
 
 const Label = props => (
-  <Legend.Label {...props} sx={{ whiteSpace: 'nowrap' }} />
+  <Legend.Label {...props}
+  sx={{ whiteSpace: 'nowrap' }}
+
+  />
 );
 
 const Results = () => {
   const [renderAxis, setRenderAxis] = useState(false);
+
 
   useEffect(() => {
     setRenderAxis(true);
@@ -59,10 +64,12 @@ const Results = () => {
 
   return (
     <>
-      <Paper>
-        <Chart data={chartData}>
+     <Paper
+    //  style={{ height: '60vh', padding: '20px' }}
+     > {/* Adjust the height and padding values as needed */}
+        <Chart data={chartData} height={600}> {/* Set the desired height of the chart */}
           {renderAxis && <ArgumentAxis />}
-          {renderAxis && <ValueAxis max={3.5} />}
+          {renderAxis && <ValueAxis max={2400} />}
           <BarSeries name="Travel" valueField="Travel" argumentField="country" />
           <BarSeries name="Food" valueField="Food" argumentField="country" />
           <BarSeries name="Energy" valueField="Energy" argumentField="country" />

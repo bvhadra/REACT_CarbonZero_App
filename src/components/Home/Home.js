@@ -7,8 +7,14 @@ import amazon from "../../assets/amazon-forest.png";
 import travel from "../../assets/air-travel.png";
 import industry from "../../assets/industrial-polution.png";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { TotalContext } from "../../context/TotalContext";
 
 function Home() {
+  const { setTotal } = useContext(TotalContext)
+  const handleClick = () => {
+    setTotal({ travel: 0, food: 0, energy: 0, clothing: 0 });
+  };
   return (
     <>
       <header>
@@ -24,7 +30,7 @@ function Home() {
             alt="Carbon Footprint"
             className="section-1-footprint"
           />
-          <button className="section-1-button">
+          <button onClick = {handleClick} className="section-1-button">
             <Link to="../Questionnaire" id="learn-more" >Learn more...</Link>
           </button>
         </section>
