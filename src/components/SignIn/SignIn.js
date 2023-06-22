@@ -11,15 +11,16 @@ export default function SignIn() {
       <main className="signin-main">
         <h1>Sign In Page</h1>
         <div className="white-box">
-          <h2>Get some rewards now for your hardwork towards saving the planet!</h2>
+          <h2>
+            Get some rewards now for your hardwork towards saving the planet!
+          </h2>
         </div>
         <button className="login">
-          <Link to="../Rewards" id="login">
-            My rewards
+          <Link to="../SignIn" id="login">
+            Log in
           </Link>
         </button>
       </main>
-      
     </>
   );
 }
