@@ -8,7 +8,7 @@ import UserComp from "../UserComp/usercomp";
 import Actions from "../Actions/Actions";
 import "./App.css";
 // import Results from "../Results/Results";
-import ResultPage from '../ResultPage/ResultPage';
+import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
 import { useState } from 'react'
 import Action from "../Action/Action";
