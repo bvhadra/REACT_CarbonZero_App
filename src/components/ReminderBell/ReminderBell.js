@@ -3,16 +3,16 @@ import { FaRegBell, FaBell } from 'react-icons/fa';
 import addNotification from 'react-push-notification';
 import './ReminderBell.css';
 
-const ReminderIcon = ({solution}) => {
+const ReminderIcon = (props) => {
   const [isReminderSet, setIsReminderSet] = useState(false);
 
-  const handleReminderClick = (solution) => {
+  const handleReminderClick = () => {
     setIsReminderSet(!isReminderSet);
     if (!isReminderSet) {
       addNotification({
         title: 'Reminder',
-        subtitle: 'This is a subtitle',
-        message: {solution},
+        // subtitle: 'This is a subtitle',
+        message: props.solution,
         theme: 'darkblue',
         native: false // when using native, your OS will handle theming.
       });
@@ -23,12 +23,12 @@ const ReminderIcon = ({solution}) => {
     <div>
       {isReminderSet ? (
         <FaBell
-          onClick={()=>handleReminderClick(solution)}
+          onClick={handleReminderClick}
           className="reminder-icon filled"
         />
       ) : (
         <FaRegBell
-          onClick={()=>handleReminderClick(solution)}
+          onClick={handleReminderClick}
           className="reminder-icon"
         />
       )}
