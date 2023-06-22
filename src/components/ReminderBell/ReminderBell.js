@@ -12,8 +12,12 @@ const ReminderIcon = (props) => {
       addNotification({
         title: 'Reminder',
         // subtitle: 'This is a subtitle',
+        duration: 8000,
         message: props.solution,
-        theme: 'darkblue',
+        backgroundTop: 'darkgreen', //optional, background color of top container.
+        backgroundBottom: 'green',
+        colorTop: 'white', //optional, font color of top container.
+    colorBottom: 'white', //optional, font color of bottom container.
         native: false // when using native, your OS will handle theming.
       });
     }
