@@ -12,9 +12,7 @@ import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
 import { useState } from 'react'
 import Action from "../Action/Action";
-
-
-
+import { Notifications } from 'react-push-notification';
 
 function App() {
 
