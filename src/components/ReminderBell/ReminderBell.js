@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaRegBell, FaBell } from 'react-icons/fa';
 import addNotification from 'react-push-notification';
-import './ReminderBell.css';
+import '../Action/Action.css';
 
 const ReminderIcon = (props) => {
   const [isReminderSet, setIsReminderSet] = useState(false);
@@ -37,7 +37,7 @@ const ReminderIcon = (props) => {
         />
       )}
     </div>
-  );
+  );  
 };
 
 export default ReminderIcon;

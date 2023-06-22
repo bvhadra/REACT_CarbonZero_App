@@ -8,12 +8,15 @@ import ReminderIcon from '../ReminderBell/ReminderBell';
 export default function Action() {
   const {id} = useParams()
 
-  const solutionsList = solutions[id].solutions.map((solution, index) => 
-      <li key={index} className="solutions">
-      <ReminderIcon solution = {solution} />
+  const solutionsList = solutions[id].solutions.map((solution, index) => (
+    <li key={index} className="solutions">
+      <span className="reminder-icon-wrapper">
+        <ReminderIcon solution={solution} />
+      </span>
       {solution}
-        </li>
-  )
+    </li>
+  ));
+  
 
   return (
     <>
