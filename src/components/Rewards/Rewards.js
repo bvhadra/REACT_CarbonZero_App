@@ -1,11 +1,23 @@
-import React from 'react'
-import Navbar from '../Navbar/Navbar'
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import "./Rewards.css"
+import { Link } from "react-router-dom";
 
 export default function Rewards() {
-    return (
-      <>
-        <Navbar />
-        <div>Rewards</div>
-      </>
-    );
+  return (
+    <>
+      <Navbar />
+      <main className="rewards-main">
+        <h1>My Rewards Page</h1>
+        <div className="white-box">
+          <h2>Get some rewards now for your hardwork towards saving the planet!</h2>
+        </div>
+        <button className="learn-more">
+          <Link to="../Rewards" id="my-rewards">
+            My rewards
+          </Link>
+        </button>
+      </main>
+    </>
+  );
 }
