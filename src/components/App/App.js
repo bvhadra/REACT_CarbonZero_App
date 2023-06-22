@@ -12,7 +12,6 @@ import ResultPage from '../ResultPage/resultpage';
 import { TotalContext } from '../../context/TotalContext'
 import { useState } from 'react'
 import Action from "../Action/Action";
-import { Notifications } from 'react-push-notification';
 
 function App() {
 
@@ -40,6 +39,7 @@ function App() {
   return (
     <TotalContext.Provider value={{ total, setTotal }}>
     <div className="App">
+    {/* <Notifications /> */}
       <Routes>
         <Route path={paths["/"]} element={<Home />} />
         <Route path={paths["/rewards"]} element={<Rewards />} />

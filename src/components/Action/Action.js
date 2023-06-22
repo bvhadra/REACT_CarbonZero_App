@@ -10,7 +10,7 @@ export default function Action() {
 
   const solutionsList = solutions[id].solutions.map((solution, index) => 
       <li key={index} className="solutions">
-      <ReminderIcon />
+      <ReminderIcon solution = {solution} />
       {solution}
         </li>
   )
