@@ -37,12 +37,12 @@ export default function Questionnaire({ response, setResponse}) {
         setButtonClicked={setButtonClicked}
       />
 <div className="previous-button-and-results-button">
-      <PreviousButton
+      <PreviousButton className="previous-button"
         setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex}
       />
 
-      <SeeResultsButton setQuestionIndex={setQuestionIndex}
+      <SeeResultsButton className="results-button" setQuestionIndex={setQuestionIndex}
         questionIndex={questionIndex} response={response} buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>
 
 </div>

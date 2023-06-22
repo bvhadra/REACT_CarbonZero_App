@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import './Action.css'
 import {useParams} from "react-router-dom";
 import ReminderIcon from '../ReminderBell/ReminderBell';
+import amazon from "../../assets/amazon-forest.png";
 
 export default function Action() {
   const {id} = useParams()
@@ -18,13 +19,28 @@ export default function Action() {
   ));
   
 
-  return (
-    <>
+//...
+return (
+  <>
     <Navbar />
-    <h1 className="action-title"> How can you improve your {solutions[id].category} </h1>
+    <div className="main-grid">
+      <div className="title">
+        <h2> How can you improve your {solutions[id].category} </h2>
+      </div>
+      <div className="content">
+        <div className="content-text">
+          <ul>{solutionsList}</ul>
+        </div>
+        <div className="content-image">
+          <img src={amazon} alt="" />
+        </div>
+      </div>
+    </div>
+  </>
+)
+//...
 
-    <ul className = "solutions-list">{solutionsList}</ul>
-    </>
-  )
 }
+
+
 

@@ -1,0 +1,34 @@
+:root {
+    --floral-white-color: #fcf9ed;
+  }
+  
+  body {
+    background-color: var(--floral-white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* h1 {
+    text-align: center;
+    background-color: var(--floral-white-color);
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+   */
+  .questionnaire-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ensures the buttons don't overflow */
+    flex-grow: 1; /* Makes the questionnaire-body take up remaining space */
+    padding: 20px;
+  }
+  
+  .answer-button {
+    /* Style your button here */
+    margin-bottom: 20px; /* Add some space between buttons if you have multiple */
+  }
+  
