@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Paper from '@mui/material/Paper';
 import { TotalContext } from '../../context/TotalContext';
+import './Results.css';
 
 import {
   Chart,
@@ -63,7 +64,7 @@ const Results = () => {
   // const goalsData = [{ x: 'User', y: 2.5 }, { x: 'Average Worldwide', y: 2.5 }];
 
   return (
-    <>
+    <div className='results-main-div'>
      <Paper
     //  style={{ height: '60vh', padding: '20px' }}
      > {/* Adjust the height and padding values as needed */}
@@ -80,7 +81,7 @@ const Results = () => {
           <Stack stacks={[{ series: ['Travel', 'Food', 'Energy', 'Clothing'] }]} />
         </Chart>
       </Paper>
-    </>
+    </div>
   );
 };
 

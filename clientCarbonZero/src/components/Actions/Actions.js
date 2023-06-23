@@ -17,7 +17,7 @@ export default function Actions() {
     <>
       <Navbar />
       <div className="content-container">
-        <h1> Here are the actions you could take </h1>
+        <h1 id="content-container-h1"> Here are the actions you could take </h1>
         <div className="questionnaire-body">{solutionsList}</div>
       </div>
     </>

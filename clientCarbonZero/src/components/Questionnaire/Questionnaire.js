@@ -36,18 +36,24 @@ export default function Questionnaire({ response, setResponse}) {
         buttonClicked={buttonClicked}
         setButtonClicked={setButtonClicked}
       />
-<div className="previous-button-and-results-button">
-      <PreviousButton className="previous-button"
-        setQuestionIndex={setQuestionIndex}
-        questionIndex={questionIndex}
-      />
+      <div className="previous-button-and-results-button">
+        <PreviousButton
+          // style={{ margin: 0, padding: 0 }}
+          setQuestionIndex={setQuestionIndex}
+          questionIndex={questionIndex}
+        />
 
-      <SeeResultsButton className="results-button" setQuestionIndex={setQuestionIndex}
-        questionIndex={questionIndex} response={response} buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>
+        <SeeResultsButton
+          // style={{ margin: 0, padding: 0 }}
+          setQuestionIndex={setQuestionIndex}
+          questionIndex={questionIndex}
+          response={response}
+          buttonClicked={buttonClicked}
+          setButtonClicked={setButtonClicked}
+        />
+      </div>
 
-</div>
-
-<ProgressBar bgcolor={"#29524a"} completed={completed} />
+      <ProgressBar bgcolor={"#29524a"} completed={completed} />
     </div>
   );
 }

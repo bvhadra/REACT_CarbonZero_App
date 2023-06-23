@@ -7,3 +7,40 @@
   --floral-white-color: #fcf9ed;
 }
 
+/* .resultpage-main-div {
+  height: max-content;
+} */
+
+#resultpage-h1 {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+#resultpage-div {
+  /* width: 80%; */
+  text-align: center;
+  display: grid;
+  place-content: center;
+  padding-bottom: 2rem;
+}
+
+#see-results {
+  text-align: center;
+  display: grid;
+  place-content: center;
+ margin: 4rem auto 6rem auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  <Navbar />
+            <h1>Here are your carbon footprint results!</h1>
+            <Results />
+            <Link to="/Actions">
+            <button className="see-results-button"> Take Action! </button>
+            </Link>
+ */
