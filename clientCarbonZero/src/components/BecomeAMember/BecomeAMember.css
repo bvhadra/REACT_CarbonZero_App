@@ -22,7 +22,7 @@
   /* styles for main heading h1 */
   .become-a-member-main h1 {
     font-size: 7rem;
-    grid-column: 6/18;
+    grid-column: 6/16;
     grid-row: 2;
     color: var(--pure-white-color);
     font-family: "League Spartan", sans-serif;
@@ -31,7 +31,7 @@
   }
   
   /* styles for white div positioned at center of page */
-  .white-box {
+  .becomeamember-white-box {
     grid-column: 4/18;
     grid-row: 4/9;
     background-color: var(--pure-white-color);
@@ -43,12 +43,12 @@
   }
   
   /* styles for white-box h2 element */
-  .white-box h2 {
+  .becomeamember-white-box h2 {
       font-size: 4rem;
       font-weight: 300;
        text-align: center;
-       grid-column: 2/10;
-       grid-row: 2/7;
+       grid-column: 3/9;
+       grid-row: 3/7;
   }
   
   /* styles for button with classname learn more */
@@ -64,7 +64,7 @@
     z-index: 2;
   }
   
-  /* styles for link to rewards page's stretch goal */
+  /* styles for link to become a member page's stretch goal */
   #become-a-member {
     text-decoration: none;
     color: var(--pure-white-color);
@@ -73,14 +73,3 @@
   }
   
   /* end */
-  /* <main className="become-a-member-main">
-  <h1>Become A Member</h1>
-  <div className="white-box">
-    <h2>Sign up here to get access to your account, profile and use our app!</h2>
-  </div>
-  <button className="register">
-    <Link to="../BecomeAMember" id="become-a-member">
-      My rewards
-    </Link>
-  </button>
-</main> */

@@ -38,13 +38,15 @@ export default function Questionnaire({ response, setResponse}) {
       />
       <div className="previous-button-and-results-button">
         <PreviousButton
-          // style={{ margin: 0, padding: 0 }}
+          margin={"0"}
+          padding={"0"}
           setQuestionIndex={setQuestionIndex}
           questionIndex={questionIndex}
         />
 
         <SeeResultsButton
-          // style={{ margin: 0, padding: 0 }}
+          margin={"0"}
+          padding={"0"}
           setQuestionIndex={setQuestionIndex}
           questionIndex={questionIndex}
           response={response}

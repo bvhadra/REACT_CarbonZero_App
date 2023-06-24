@@ -132,8 +132,8 @@ main {
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 1rem;
-  max-height: 30vh;
-  /* margin-top: 0.5rem; */
+  max-height: 35vh;
+  /* padding-bottom: 20rem; */
 }
 .subscribe-1-h2 {
   grid-column: 8/16;
@@ -164,7 +164,7 @@ main {
 }
 
 /* responsive style for mobile  */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .section-1 {
     /* background-color: var(--brunswick-green-color); */

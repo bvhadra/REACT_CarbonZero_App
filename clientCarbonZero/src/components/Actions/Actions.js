@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Actions() {
   const solutionsList = solutions.map((categoryTitles) => (
     <Link to={`/Actions/${categoryTitles.id}`}>
-      <button key={categoryTitles.id} className="answer-button">
+      <button key={categoryTitles.id} className="answer-button" id="actions-button">
         {categoryTitles.category}
       </button>
     </Link>

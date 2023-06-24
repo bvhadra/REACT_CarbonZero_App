@@ -5,6 +5,7 @@ import './Action.css'
 import {useParams} from "react-router-dom";
 import ReminderIcon from '../ReminderBell/ReminderBell';
 import amazon from "../../assets/amazon-forest.png";
+import { Link } from 'react-router-dom';
 
 export default function Action() {
   const {id} = useParams()
@@ -30,14 +31,17 @@ return (
       <div className="content">
         <div className="content-text">
           <ul>{solutionsList}</ul>
+          <button className="previous-button" id='back-to-actions'>
+            <Link to="../Actions">Back</Link>
+          </button>
         </div>
         <div className="content-image">
-          <img src={amazon} alt="" />
+          <img src={amazon} alt="deforestation" />
         </div>
       </div>
     </div>
   </>
-)
+);
 //...
 
 }

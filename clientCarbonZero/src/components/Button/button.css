@@ -6,13 +6,20 @@
   --floral-white-color: #fcf9ed;
 }
 .question-title {
-    margin: 2rem 0px;
+  text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
 }
  .answer-button {
-  width: 20rem;
+  text-align: center;
+  width: 30rem;
   height: 3.5rem;
   margin: 1rem auto;
   background-color: var(--brunswick-green-color);
   color: var(--floral-white-color);
   font-size: 1.5rem;
+}
+.answer-button:hover {
+  cursor: pointer;
 }

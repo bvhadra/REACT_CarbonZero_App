@@ -1,6 +1,11 @@
+/* app accessibility colors */
 :root {
-    --floral-white-color: #fcf9ed;
-  }
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
   
   .main-grid {
     display: grid;
@@ -16,7 +21,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 40px; /* Increase gap below the h1 */
-    font-size: 30px;
+  }
+  .title h2 {
+     font-size: 4rem;
+    font-weight: 400;
   }
   
   .content {
@@ -30,8 +38,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center; /* Aligns the text to the middle of the container */
-    padding: 0 10px;
-    font-size: 1.2em;
+    padding: 0 0.5rem;
+    font-size: 2rem;
   }
   
   
@@ -39,7 +47,8 @@
   .solutions {
     display: flex;
     align-items: center;
-    margin-bottom: 30px; /* Add space between list items */
+    line-height: 2.2rem;
+    margin-bottom: 1.5rem; /* Add space between list items */
   }  
   
   .content-image {
@@ -56,6 +65,13 @@
   }
   
   .reminder-icon-wrapper {
-    margin-right: 10px; /* Adjust as needed */
+    margin-right: 1rem; /* Adjust as needed */
+    color: var(--burnt-sienna-color);
+  }
+
+  /* styles back button to Actions page */
+  #back-to-actions a {
+    color: var(--burnt-sienna-color);
   }
   
+/* end */

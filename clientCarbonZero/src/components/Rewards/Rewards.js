@@ -8,8 +8,8 @@ export default function Rewards() {
     <>
       <Navbar />
       <main className="rewards-main">
-        <h1>My Rewards Page</h1>
-        <div className="white-box">
+        <h1>My Rewards</h1>
+        <div className="rewards-white-box">
           <h2>Get some rewards now for your hardwork towards saving the planet!</h2>
         </div>
         <button className="learn-more">

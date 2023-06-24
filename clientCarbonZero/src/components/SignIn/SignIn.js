@@ -3,16 +3,16 @@ import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import "./SignIn.css";
 
-
 export default function SignIn() {
   return (
     <>
       <Navbar />
       <main className="signin-main">
-        <h1>Sign In Page</h1>
-        <div className="white-box">
+        <h1>Sign In</h1>
+        <div className="signin-white-box">
           <h2>
-            Get some rewards now for your hardwork towards saving the planet!
+            To sign in to your account, you need to enter your username and
+            password here.
           </h2>
         </div>
         <button className="login">

@@ -13,9 +13,9 @@
 
 #resultpage-h1 {
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #resultpage-div {
@@ -23,7 +23,7 @@
   text-align: center;
   display: grid;
   place-content: center;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 #see-results {

@@ -9,7 +9,7 @@ export default function BecomeAMember() {
       <Navbar />
       <main className="become-a-member-main">
         <h1>Become A Member</h1>
-        <div className="white-box">
+        <div className="becomeamember-white-box">
           <h2>Sign up here to get access to your account, profile and use our app!</h2>
         </div>
         <button className="register">
