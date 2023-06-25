@@ -31,6 +31,7 @@
   display: grid;
   place-content: center;
  margin: 4rem auto 6rem auto;
+ cursor: pointer;
 }
 
 a {

@@ -47,12 +47,18 @@ main {
   grid-row: 9;
   background-color: var(--burnt-sienna-color);
   color: var(--floral-white-color);
+  border: none;
   font-size: 1.8rem;
   z-index: 3;
 }
+.section-1-button:hover {
+  cursor: pointer;
+}
+
 .section-1-button #learn-more {
   text-decoration: none;
   color: var(--floral-white-color);
+  padding: 1rem 7rem;
 }
 
 /* section 2, 3 and 4 grid containers */
@@ -136,11 +142,11 @@ main {
   /* padding-bottom: 20rem; */
 }
 .subscribe-1-h2 {
-  grid-column: 8/16;
+  grid-column: 8/15;
   grid-row: 2;
   font-size: 4.5rem;
   font-weight: 400;
-  padding: 2rem 0;
+  padding: 1rem 0;
   color: var(--floral-white-color);
 }
 .subscribe-1-input {
@@ -156,6 +162,13 @@ main {
   color: var(--pure-white-color);
   font-size: 1.5rem;
   text-align: center;
+  border: none;
+}
+
+.subscribe-1-submit a {
+  text-decoration: none;
+  color: var(--floral-white-color);
+  padding: 1rem 8rem;
 }
 
 .subscribe-1-submit:hover {
@@ -165,8 +178,7 @@ main {
 
 /* responsive style for mobile  */
 @media screen and (max-width: 426px) {
-
-    .section-1 {
+  .section-1 {
     /* background-color: var(--brunswick-green-color); */
     display: grid;
     grid-template-columns: repeat(20, 1fr);
@@ -182,7 +194,7 @@ main {
     color: var(--pure-white-color);
     z-index: 2;
   }
-   .section-1-footprint {
+  .section-1-footprint {
     width: 100%;
     height: auto;
     /* place-self: center; */
@@ -190,10 +202,10 @@ main {
     grid-row: 1/10;
     z-index: 1;
   }
-    .section-1-button {
+  .section-1-button {
     width: 12rem;
     height: 2rem;
-     grid-column: 7/10;
+    grid-column: 7/10;
     grid-row: 8;
     background-color: var(--burnt-sienna-color);
     color: var(--floral-white-color);
@@ -204,7 +216,7 @@ main {
     text-decoration: none;
     color: var(--floral-white-color);
   }
-  
+
   /* section 2, 3 and 4 grid containers mobile styles*/
   .section-2,
   .section-3,
@@ -231,7 +243,7 @@ main {
     font-weight: 500;
     margin-bottom: 0.5rem;
   }
-    .section-2-h4 {
+  .section-2-h4 {
     grid-column: 13/20;
     grid-row: 3/6;
     font-size: 0.9rem;
@@ -247,9 +259,8 @@ main {
     margin-bottom: 0.5rem;
   }
 
-
   .section-4-h4 {
-     grid-column: 13/20;
+    grid-column: 13/20;
     grid-row: 3/6;
     font-size: 0.9rem;
     text-align: left;
@@ -324,11 +335,10 @@ main {
   }
 }
 
-  /* main * {
+/* main * {
     display: none;
     /* flex-direction: column;
     width: 100vw !important; */
-  /* grid-template-columns: 100%;
+/* grid-template-columns: 100%;
   grid-template-rows: repeat(4, 1fr); */
-  /* gap: 1rem; */
-
+/* gap: 1rem; */

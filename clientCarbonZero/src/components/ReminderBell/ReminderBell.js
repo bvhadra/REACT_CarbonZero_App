@@ -24,7 +24,7 @@ const ReminderIcon = (props) => {
   };
 
   return (
-    <div>
+    <div className='reminder-icon-div' >
       {isReminderSet ? (
         <FaBell
           onClick={handleReminderClick}

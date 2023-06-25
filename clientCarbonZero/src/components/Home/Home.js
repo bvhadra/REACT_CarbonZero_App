@@ -30,8 +30,10 @@ function Home() {
             alt="Carbon Footprint"
             className="section-1-footprint"
           />
-          <button onClick = {handleClick} className="section-1-button">
-            <Link to="../Questionnaire" id="learn-more" >Learn more...</Link>
+          <button onClick={handleClick} className="section-1-button">
+            <Link to="../Questionnaire" id="learn-more">
+              Learn more...
+            </Link>
           </button>
         </section>
         <section className="section-2">
@@ -77,7 +79,9 @@ function Home() {
           className="subscribe-1-input"
           placeholder="Enter your email here..."
         />
-        <button className="subscribe-1-submit">Subscribe</button>
+        <button className="subscribe-1-submit">
+          <Link to={"/"}>Subscribe</Link>
+        </button>
       </section>
     </>
   );
