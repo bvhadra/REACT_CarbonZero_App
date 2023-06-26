@@ -25,7 +25,7 @@ jobs:
 
     - name: Install dependencies
       working-directory: ./clientCarbonZero
-      run: npm ci
+      run: npm ci --legacy-peer-deps
 
     - name: Test
       working-directory: ./clientCarbonZero
