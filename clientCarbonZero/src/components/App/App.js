@@ -8,20 +8,18 @@ import UserComp from "../UserComp/usercomp";
 import Actions from "../Actions/Actions";
 import "./App.css";
 // import Results from "../Results/Results";
-import ResultPage from '../ResultPage/ResultPage';
-import { TotalContext } from '../../context/TotalContext'
-import { useState } from 'react'
+import ResultPage from "../ResultPage/resultpage";
+import { TotalContext } from "../../context/TotalContext";
+import { useState } from "react";
 import Action from "../Action/Action";
 
 function App() {
-
   const [total, setTotal] = useState({
     travel: 0,
     food: 0,
     energy: 0,
     clothing: 0,
   });
-  
 
   //paths object for routing files to be rendered by app component using react router
   const paths = {
@@ -33,25 +31,24 @@ function App() {
     // "/usercomp": "",
     "/results": "/Results",
     "/actions": "/Actions",
-
   };
- 
+
   return (
     <TotalContext.Provider value={{ total, setTotal }}>
-    <div className="App">
-    {/* <Notifications /> */}
-      <Routes>
-        <Route path={paths["/"]} element={<Home />} />
-        <Route path={paths["/rewards"]} element={<Rewards />} />
-        {/* <Route path={paths["/questionnaire"]} element={<Questionnaire />} /> */}
-        <Route path={paths["/become a member"]} element={<BecomeAMember />} />
-        <Route path={paths["/sign in"]} element={<SignIn />} />
-        <Route path={paths["/questionnaire"]} element={<UserComp />} />
-        <Route path={paths["/actions"]} element={<Actions />} />
-        <Route path="/Actions/:id" element={<Action />} />
-        <Route path="/ResultPage" element={<ResultPage />} />
-      </Routes>
-    </div>
+      <div className="App">
+        {/* <Notifications /> */}
+        <Routes>
+          <Route path={paths["/"]} element={<Home />} />
+          <Route path={paths["/rewards"]} element={<Rewards />} />
+          {/* <Route path={paths["/questionnaire"]} element={<Questionnaire />} /> */}
+          <Route path={paths["/become a member"]} element={<BecomeAMember />} />
+          <Route path={paths["/sign in"]} element={<SignIn />} />
+          <Route path={paths["/questionnaire"]} element={<UserComp />} />
+          <Route path={paths["/actions"]} element={<Actions />} />
+          <Route path="/Actions/:id" element={<Action />} />
+          <Route path="/ResultPage" element={<ResultPage />} />
+        </Routes>
+      </div>
     </TotalContext.Provider>
   );
 }
