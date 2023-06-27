@@ -9,6 +9,7 @@ import industry from "../../assets/industrial-polution.png";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { TotalContext } from "../../context/TotalContext";
+import GetGraph from '../GetGraph/GetGraph'
 
 function Home() {
   const { setTotal } = useContext(TotalContext)
@@ -83,6 +84,7 @@ function Home() {
           <Link to={"/"}>Subscribe</Link>
         </button>
       </section>
+      <GetGraph />
     </>
   );
 }

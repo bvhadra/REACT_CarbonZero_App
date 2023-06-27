@@ -3,11 +3,7 @@ import { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
-
-const supabase = createClient(
-  "https://<project>.supabase.co",
-  "<your-anon-key>"
-);
+import supabase from '../../lib/supabaseclient'
 
 export default function App() {
   const [session, setSession] = useState(null);
