@@ -8,18 +8,16 @@ Fetch the data from the users_score table
         We will get the UUID from the session
 Set up error handling 
 */
-import supabase from '../../lib/supabaseclient'
-import React from 'react'
-import { useState, useEffect } from 'react'
+import supabase from "../../lib/supabaseclient";
+import React from "react";
+import { useState, useEffect } from "react";
 
 function GetGraph() {
+  const [graphData, setGraphData] = useState(null);
+  const [graphError, setGraphError] = useState(null);
+  // const [userSession, setUserSession ] = useState(null)
 
-const [graphData, setGraphData ] = useState(null)
-const [graphError, setGraphError ] = useState(null)
-// const [userSession, setUserSession ] = useState(null)
-
-useEffect( () => {
-
+  useEffect(() => {
     // const fetchSessions = async () => {
 
     // const session = await supabase.auth.session()
@@ -29,41 +27,38 @@ useEffect( () => {
     // }
 
     const fetchData = async () => {
+      // let { data, error } = await supabase
+      //     .from('users_score ')
+      //     .select('*')
 
-    let { data, error } = await supabase
-        .from('users_score ')
-        .select('*')
+      // getting the users data or an error if data isn't found
+      const { data, error } = await supabase
+        .from("users_score")
+        .select("*")
+        .eq("user_id", "fe684543-b64f-4bf8-b8e0-62c8616719b7");
+      console.log(error);
+      console.log(data);
 
+      if (error) {
+        setGraphError("Record Not Found");
+        setGraphData(null);
+      }
 
-        
-    // const { data, error } = await supabase
-    // .from('users_score ')
-    // .select('food_score', 'travel_score', 'energy_score', 'clothing_score')
-    // .eq('user_id', 'fe684543-b64f-4bf8-b8e0-62c8616719b7')
-        console.log(error)
-    if(error) {
-        setGraphError('Record Not Found')
-        setGraphData(null)
-    }
+      if (data) {
+        setGraphError(null);
+        setGraphData(data);
+      }
+    };
 
-    if(data) {
-        setGraphError(null)
-        setGraphData(data)
-    }
-}
-
-    fetchData()
+    fetchData();
     // fetchSessions()
+  }, []);
 
-}, [])
-
-return (
-
+  return (
     <div>
-    <p>{graphData?.food_score}</p>
+      <p>{graphData?.food_score}</p>
     </div>
-)
-
+  );
 }
 
-export default GetGraph
+export default GetGraph;
