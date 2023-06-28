@@ -16,16 +16,16 @@ import { useState, useEffect } from "react";
 function GetGraph() {
   const [graphData, setGraphData] = useState(null);
   const [graphError, setGraphError] = useState(null);
-  // const [userSession, setUserSession ] = useState(null)
+  const [userSession, setUserSession ] = useState(null)
 
   useEffect(() => {
-    // const fetchSessions = async () => {
+    const fetchSessions = async () => {
 
-    // const session = await supabase.auth.session()
+    const session = await supabase.auth.session()
 
-    // setUserSession(session)
+    setUserSession(session)
 
-    // }
+    }
 
     const fetchData = async () => {
       // let { data, error } = await supabase
@@ -48,11 +48,12 @@ function GetGraph() {
       if (data) {
         setGraphError(null);
         setGraphData(data);
+        console.log(data)
       }
     };
 
     fetchData();
-    // fetchSessions()
+    fetchSessions()
   }, []);
 
   return (

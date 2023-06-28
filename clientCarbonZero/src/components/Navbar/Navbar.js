@@ -32,7 +32,7 @@ function Navbar() {
             <Link to="../BecomeAMember">Become a member</Link>
           </li>
           <li>
-            <Link to="../SignIn">Sign in</Link>
+            <Link to="/auth">Sign in</Link>
           </li>
         </ul>
       </ul>

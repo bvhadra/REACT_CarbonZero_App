@@ -12,7 +12,7 @@ import Home from "../Home/Home";
 import PostGraph from "../PostGraph/PostGraph";
 
 export default function Authenticate() {
-  const { total, setTotal } = useContext(TotalContext);
+  const { total } = useContext(TotalContext);
   const [session, setSession] = useState(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Authenticate() {
   console.log(total);
   console.log(session);
 
-  if (session) {
+  if (!session) {
     return (
       <div className="auth-main-div">
         <Navbar />
@@ -68,22 +68,29 @@ export default function Authenticate() {
         />
       </div>
     );
-  } else if (
-    total.travel === 0 &&
-    total.energy === 0 &&
-    total.clothing === 0 &&
-    total.food === 0
-  ) {
-    return <Home />;
+
   } else {
     return (
-      <>
-        <ResultPage />
-        <PostGraph />
-      </>
-    );
+    <p>Logged In!</p>
+    )
   }
 }
+
+
+  // } else if (
+  //   total.travel === 0 &&
+  //   total.energy === 0 &&
+  //   total.clothing === 0 &&
+  //   total.food === 0
+  // ) {
+  //   return <Home />;
+  // } else {
+  //   return (
+  //     <>
+  //       <ResultPage />
+  //       <PostGraph />
+  //     </>
+  //   );
 
 // useContext to get the total state to this part of the app.
 //if total state untouched, direct them to home page and dont update database
