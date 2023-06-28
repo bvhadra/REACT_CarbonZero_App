@@ -12,6 +12,7 @@ import supabase from "../../lib/supabaseclient";
 import React from "react";
 import { useState, useEffect } from "react";
 
+
 function GetGraph() {
   const [graphData, setGraphData] = useState(null);
   const [graphError, setGraphError] = useState(null);

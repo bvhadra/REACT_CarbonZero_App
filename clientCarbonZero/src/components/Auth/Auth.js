@@ -1,12 +1,12 @@
 // component for authenticating users before they are signed in to see their results and save data to supabase database
 import { useState, useEffect } from "react";
-import { createClient } from "@supabase/supabase-js";
+// import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
-// import supabase from '../../lib/supabaseclient'
+import supabase from '../../lib/supabaseclient'
 import ResultPage from "../ResultPage/resultpage";
 // import "../../../.env";
 
-const supabase = createClient("REACT_APP_SUPABASE_URL", "REACT_APP_SUPEBASE_ANON_KEY");
+//const supabase = createClient("REACT_APP_SUPABASE_URL", "REACT_APP_SUPEBASE_ANON_KEY");
 
 
 export default function Authenticate() {
