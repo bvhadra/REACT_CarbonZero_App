@@ -6,9 +6,15 @@ import supabase from '../../lib/supabaseclient'
 // import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 import ResultPage from "../ResultPage/resultpage";
 import Navbar from "../Navbar/Navbar";
+import { useContext } from 'react'
+import { TotalContext } from '../../context/TotalContext'
+import Home from '../Home/Home'
+import PostGraph from "../PostGraph/PostGraph";
 
 
 export default function Authenticate() {
+
+  const { total, setTotal } = useContext(TotalContext);
   const [session, setSession] = useState(null);
 
   useEffect(() => {
@@ -25,11 +31,15 @@ export default function Authenticate() {
     return () => subscription.unsubscribe();
   }, []);
 
+  console.log(total)
+  console.log(session)
+
   if (!session) {
     return (
       <div className="auth-main-div">
         <Navbar />
         <Auth
+          redirectTo={"/Questionnaire"}
           supabaseClient={supabase}
           appearance={{
             style: {
@@ -60,7 +70,28 @@ export default function Authenticate() {
         />
       </div>
     );
+  } else if (total.travel === 0 && total.energy === 0 && total.clothing === 0 && total.food === 0) {
+
+
+    
+
+    return <Home />;
   } else {
-    return <ResultPage />;
-  }
+
+
+    return (
+    <>
+    <ResultPage />
+    <PostGraph />
+
+  </>
+    )
 }
+
+}
+
+
+// useContext to get the total state to this part of the app. 
+//if total state untouched, direct them to home page and dont update database
+// if total state has value then divert to results page and send data to db
+// if !session then render sign up, else render 

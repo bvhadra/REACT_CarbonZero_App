@@ -7,10 +7,15 @@
 import supabase from "../../lib/supabaseclient";
 import React from "react";
 import { useState, useEffect, useContext } from "react";
+import { TotalContext } from "../../context/TotalContext";
+
+
+//remove the hard code of user, so that it takes the ID of current signed in user
 
 
 function PostGraph(){
 
+    const { total, setTotal } = useContext(TotalContext);
     const [graphError, setGraphError] = useState(null);
 
 useEffect(() => {
@@ -21,10 +26,10 @@ useEffect(() => {
         .from("users_score")
         .insert([{
             user_id: "fe684543-b64f-4bf8-b8e0-62c8616719b7",
-            food_score: 5,
-            clothing_score: 5,
-            energy_score: 5,
-            travel_score: 5
+            food_score: total.food,
+            clothing_score: total.clothing,
+            energy_score: total.energy,
+            travel_score: total.travel
         }])
 
         if (error){

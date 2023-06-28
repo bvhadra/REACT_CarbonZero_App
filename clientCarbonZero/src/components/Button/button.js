@@ -17,7 +17,7 @@ export default function Button({ data, questionIndex, setQuestionIndex, response
     
     // setResponse([...response, calculations[index]]);
    setResponse(response.map((item, idx) => (idx === questionIndex ? { ...item, response: calculations[index] }  : item)));
-    console.log(response);
+    // console.log(response);
   };
 
   const answerList = answers.map((answer, index) => (

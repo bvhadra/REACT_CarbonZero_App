@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { TotalContext } from "../../context/TotalContext";
 //import GetGraph from '../GetGraph/GetGraph'
-import PostGraph from '../PostGraph/PostGraph'
+// import PostGraph from '../PostGraph/PostGraph'
 
 function Home() {
   const { setTotal } = useContext(TotalContext)
@@ -85,7 +85,6 @@ function Home() {
           <Link to={"/"}>Subscribe</Link>
         </button>
       </section>
-      <PostGraph />
     </>
   );
 }
