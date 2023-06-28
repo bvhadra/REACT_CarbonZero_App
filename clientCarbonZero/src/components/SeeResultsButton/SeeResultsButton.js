@@ -5,10 +5,12 @@ import { TotalContext } from "../../context/TotalContext";
 import { Link } from "react-router-dom";
 import "./SeeResultsButton.css";
 
-
-export default function SeeResultsButton({ response, questionIndex, buttonClicked }) {
-
-  const { setTotal } = useContext(TotalContext)
+export default function SeeResultsButton({
+  response,
+  questionIndex,
+  buttonClicked,
+}) {
+  const { setTotal } = useContext(TotalContext);
 
   if (questionIndex !== questionsList.length - 1) {
     return null;
@@ -18,7 +20,7 @@ export default function SeeResultsButton({ response, questionIndex, buttonClicke
     setTotal((prevTotal) => {
       let newTotal = { ...prevTotal };
       // let newTotal = prevTotal;
-  
+
       response.forEach((item) => {
         if (newTotal.hasOwnProperty(item.category)) {
           newTotal[item.category] += item.response;
@@ -28,17 +30,17 @@ export default function SeeResultsButton({ response, questionIndex, buttonClicke
       return newTotal;
     });
   };
-    
 
   if (questionIndex === questionsList.length - 1 && buttonClicked === true) {
-  return (
-    <>
-    <Link to="/ResultPage">
-    <button className="see-results-button" onClick = {handleClick}>
-    See Your Results
-    </button>
-    </Link>
-    </>
-  )
+    return (
+      <>
+        {/* <Link to="/ResultPage"> */}
+        <Link to="/Auth">
+          <button className="see-results-button" onClick={handleClick}>
+            See Your Results
+          </button>
+        </Link>
+      </>
+    );
   }
 }
