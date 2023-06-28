@@ -2,18 +2,16 @@
 import { useState, useEffect } from "react";
 import { Auth } from "@supabase/auth-ui-react";
 // import { Link } from "react-router-dom";
-import supabase from '../../lib/supabaseclient'
+import supabase from "../../lib/supabaseclient";
 // import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 import ResultPage from "../ResultPage/resultpage";
 import Navbar from "../Navbar/Navbar";
-import { useContext } from 'react'
-import { TotalContext } from '../../context/TotalContext'
-import Home from '../Home/Home'
+import { useContext } from "react";
+import { TotalContext } from "../../context/TotalContext";
+import Home from "../Home/Home";
 import PostGraph from "../PostGraph/PostGraph";
 
-
 export default function Authenticate() {
-
   const { total, setTotal } = useContext(TotalContext);
   const [session, setSession] = useState(null);
 
@@ -31,10 +29,10 @@ export default function Authenticate() {
     return () => subscription.unsubscribe();
   }, []);
 
-  console.log(total)
-  console.log(session)
+  console.log(total);
+  console.log(session);
 
-  if (!session) {
+  if (session) {
     return (
       <div className="auth-main-div">
         <Navbar />
@@ -70,28 +68,24 @@ export default function Authenticate() {
         />
       </div>
     );
-  } else if (total.travel === 0 && total.energy === 0 && total.clothing === 0 && total.food === 0) {
-
-
-    
-
+  } else if (
+    total.travel === 0 &&
+    total.energy === 0 &&
+    total.clothing === 0 &&
+    total.food === 0
+  ) {
     return <Home />;
   } else {
-
-
     return (
-    <>
-    <ResultPage />
-    <PostGraph />
-
-  </>
-    )
+      <>
+        <ResultPage />
+        <PostGraph />
+      </>
+    );
+  }
 }
 
-}
-
-
-// useContext to get the total state to this part of the app. 
+// useContext to get the total state to this part of the app.
 //if total state untouched, direct them to home page and dont update database
 // if total state has value then divert to results page and send data to db
-// if !session then render sign up, else render 
+// if !session then render sign up, else render
