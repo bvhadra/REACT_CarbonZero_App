@@ -1,12 +1,11 @@
 // component for authenticating users before they are signed in to see their results and save data to supabase database
 import { useState, useEffect } from "react";
-import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
-// import supabase from '../../lib/supabaseclient'
+// import { Link } from "react-router-dom";
+import supabase from '../../lib/supabaseclient'
+// import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
 import ResultPage from "../ResultPage/resultpage";
-// import "../../../.env";
-
-const supabase = createClient("REACT_APP_SUPABASE_URL", "REACT_APP_SUPEBASE_ANON_KEY");
+import Navbar from "../Navbar/Navbar";
 
 
 export default function Authenticate() {
@@ -28,35 +27,38 @@ export default function Authenticate() {
 
   if (!session) {
     return (
-      <Auth
-        supabaseClient={supabase}
-        appearance={{
-          style: {
-            container: { height: "40%", width: "40%", margin: "0 auto" },
-            button: {
-              background: "#29524a",
-              color: "white",
-              marginTop: "20px",
-              width: "100%",
-              height: "70px",
-              alignItems: "center",
+      <div className="auth-main-div">
+        <Navbar />
+        <Auth
+          supabaseClient={supabase}
+          appearance={{
+            style: {
+              container: { height: "30%", width: "50%", margin: "0 auto" },
+              button: {
+                background: "#29524a",
+                color: "white",
+                marginTop: "20px",
+                width: "100%",
+                height: "70px",
+                alignItems: "center",
+              },
+              anchor: { color: "#000000", textDecoration: "none" },
+              divider: { color: "green" },
+              label: { fontSize: "20px", fontWeight: "300", color: "#000000" },
+              input: {
+                height: "40px",
+                width: "100%",
+                color: "green",
+                padding: "10px",
+                fontSize: "20px",
+                fontWeight: "300",
+              },
+              loader: { color: "green" },
+              message: { color: "green" },
             },
-            anchor: { color: "#000000", textDecoration: "none" },
-            divider: { color: "green" },
-            label: { fontSize: "20px", fontWeight: "300", color: "#000000" },
-            input: {
-              height: "40px",
-              width: "100%",
-              color: "green",
-              padding: "10px",
-              fontSize: "20px",
-              fontWeight: "300",
-            },
-            loader: { color: "green" },
-            message: { color: "green" },
-          },
-        }}
-      />
+          }}
+        />
+      </div>
     );
   } else {
     return <ResultPage />;

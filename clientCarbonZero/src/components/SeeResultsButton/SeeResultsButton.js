@@ -35,7 +35,7 @@ export default function SeeResultsButton({
     return (
       <>
         {/* <Link to="/ResultPage"> */}
-        <Link to="/Auth">
+        <Link to="/auth">
           <button className="see-results-button" onClick={handleClick}>
             See Your Results
           </button>

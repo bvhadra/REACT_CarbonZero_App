@@ -31,9 +31,10 @@ function App() {
     "/actions": "/Actions",
     "/actions/:id": "/Actions/:id",
     "/resultpage": "/ResultPage",
-    "/auth": "/Authenticate"
+    "/auth": "/Auth"
   };
 
+  // below we are routing the paths to the function element contained in that component.
   return (
     <TotalContext.Provider value={{ total, setTotal }}>
       <div className="App">
@@ -44,9 +45,9 @@ function App() {
           <Route path={paths["/signin"]} element={<SignIn />} />
           <Route path={paths["/questionnaire"]} element={<UserComp />} />
           <Route path={paths["/actions"]} element={<Actions />} />
-          <Route path={paths["/Actions/:id"]} element={<Action />} />
-          <Route path={paths["/ResultPage"]} element={<ResultPage />} />
-          <Route path={paths["/Auth"]} element={<Authenticate />} />
+          <Route path={paths["/actions/:id"]} element={<Action />} />
+          <Route path={paths["/resultpage"]} element={<ResultPage />} />
+          <Route path={paths["/auth"]} element={<Authenticate />} />
         </Routes>
       </div>
     </TotalContext.Provider>
