@@ -10,7 +10,7 @@ function Profile() {
     const renderGraphData = () => {
         return [...graphData].reverse().map((data, index) => (
             <div key={index} className="graph-container">
-                <ProfileResults clothing={data.clothing_score} food={data.food} travel={data.travel_score} energy={data.energy_score}/>
+                <ProfileResults clothing={data.clothing_score} food={data.food_score} travel={data.travel_score} energy={data.energy_score}/>
             </div>
         ));
     };

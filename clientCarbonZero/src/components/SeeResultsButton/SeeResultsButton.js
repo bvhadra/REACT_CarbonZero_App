@@ -71,9 +71,11 @@ export default function SeeResultsButton({
   
     setTotal(newTotal);
   
-    if (session && newTotal.travel > 0) {
-      await postData(session.data.session.user.id, newTotal);
+    if (!session.data.session || newTotal.travel <= 0) {
+      return;
     }
+      await postData(session.data.session.user.id, newTotal);
+    
   };
   
   
