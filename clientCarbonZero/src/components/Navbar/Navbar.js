@@ -28,11 +28,11 @@ function Navbar() {
           <li onClick = {handleClick}>
             <Link to="../Questionnaire">Questionnaire</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="../BecomeAMember">Become a member</Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="/auth">Sign in</Link>
+            <Link to="/auth">Profile</Link>
           </li>
         </ul>
       </ul>

@@ -10,6 +10,7 @@ import { useContext } from "react";
 import { TotalContext } from "../../context/TotalContext";
 import Home from "../Home/Home";
 import PostGraph from "../PostGraph/PostGraph";
+import Profile from '../Profile/Profile'
 
 export default function Authenticate() {
   const { total } = useContext(TotalContext);
@@ -71,7 +72,7 @@ export default function Authenticate() {
 
   } else {
     return (
-    <p>Logged In!</p>
+    <Profile />
     )
   }
 }

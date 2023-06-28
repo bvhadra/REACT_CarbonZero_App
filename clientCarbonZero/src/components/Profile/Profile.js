@@ -2,21 +2,26 @@ import React, { useState } from 'react';
 import GetGraph from '../GetGraph/GetGraph';
 import ProfileResults from '../ProfileResults/ProfileResults';
 import NavBar from '../Navbar/Navbar';
+import './Profile.css';
 
 function Profile() {
     const [graphData, setGraphData] = useState(null);
 
     const renderGraphData = () => {
         return [...graphData].reverse().map((data, index) => (
-            <ProfileResults key={index} clothing={data.clothing_score} />
+            <div key={index} className="graph-container">
+                <ProfileResults clothing={data.clothing_score} food={data.food} travel={data.travel_score} energy={data.energy_score}/>
+            </div>
         ));
     };
 
     return (
         <>
             <NavBar />
-            <p>{graphData ? "Graph data" : "Loading graph data..."}</p>
-            {graphData && renderGraphData()}
+            <h1 className="centered-title">{graphData ? "Your Footprint History" : ""}</h1>
+            <div className="graphs">
+                {graphData && renderGraphData()}
+            </div>
             <GetGraph setGraphData={setGraphData} />
         </>
     );

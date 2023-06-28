@@ -36,9 +36,9 @@ const Results = (props) => {
   const energyConsumption = [
     {
       country: 'User',
-      Travel: 0,
-      Food: 0,
-      Energy: 0,
+      Travel: props.travel,
+      Food: props.food,
+      Energy: props.energy,
       Clothing: props.clothing,
     },
     {
