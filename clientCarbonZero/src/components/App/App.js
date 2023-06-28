@@ -10,6 +10,7 @@ import Actions from "../Actions/Actions";
 import Authenticate from "../Auth/Auth";
 import ResultPage from "../ResultPage/resultpage";
 import Action from "../Action/Action";
+import Profile from '../Profile/Profile'
 import "./App.css";
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
     "/actions": "/Actions",
     "/actions/:id": "/Actions/:id",
     "/resultpage": "/ResultPage",
-    "/auth": "/Auth"
+    "/auth": "/Auth",
+    "/profile": "/profile"
   };
 
   // below we are routing the paths to the function element contained in that component.
@@ -48,6 +50,7 @@ function App() {
           <Route path={paths["/actions/:id"]} element={<Action />} />
           <Route path={paths["/resultpage"]} element={<ResultPage />} />
           <Route path={paths["/auth"]} element={<Authenticate />} />
+          <Route path={paths["/profile"]} element={<Profile />} />
         </Routes>
       </div>
     </TotalContext.Provider>
