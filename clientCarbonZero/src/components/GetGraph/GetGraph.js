@@ -1,10 +1,8 @@
 import supabase from "../../lib/supabaseclient";
-import React from "react";
 import { useState, useEffect } from "react";
-import ProfileResults from '../ProfileResults/ProfileResults'
 
 function GetGraph( {setGraphData}) {
-  const [graphError, setGraphError] = useState(null);
+  const [ setGraphError ] = useState(null);
   const [userSession, setUserSession ] = useState(null)
 
   useEffect(() => {
@@ -15,6 +13,8 @@ function GetGraph( {setGraphData}) {
     if (userSession) {
       fetchData();
     }
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userSession])
 
   const fetchSessions = async () => {
