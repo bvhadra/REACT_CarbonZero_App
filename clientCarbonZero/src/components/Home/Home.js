@@ -51,10 +51,10 @@ function Home() {
         <section className="section-3">
           <h2 className="section-3-h2">Travel Miles</h2>
           <h4 className="section-3-h4">
-            1/3 of all food produced for human consumption is wasted.
+            A round-trip flight from New York to London emits as much CO2 as heating a home for a year.
             <br />
             <br />
-            This accounts for 8% of global greenhouse gas emissions.
+            Aviation accounts for 2% of global carbon emissions.
           </h4>
           <img src={travel} alt="aeroplane flying" className="section-3-img" />
         </section>
@@ -66,10 +66,10 @@ function Home() {
           />
           <h2 className="section-4-h2">Energy Consumption</h2>
           <h4 className="section-4-h4">
-            1/3 of all food produced for human consumption is wasted.
+          Burning enough coal to power a home for a day produces 40 pounds of CO2.
             <br />
             <br />
-            This accounts for 8% of global greenhouse gas emissions.
+            Coal is responsible for 30% of total carbon emissions.
           </h4>
         </section>
       </main>

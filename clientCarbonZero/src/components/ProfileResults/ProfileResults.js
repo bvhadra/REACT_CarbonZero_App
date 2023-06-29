@@ -74,7 +74,7 @@ const Results = (props) => {
           <BarSeries name="Clothing" valueField="Clothing" argumentField="country" />
           {/* <Animation /> */}
           <Legend position="bottom" rootComponent={Root} labelComponent={Label} />
-          <Title text="Your Carbon Footprint Comparison" />
+          <Title text={`Carbon Footprint - ${props.date}`} />
           <Stack stacks={[{ series: ['Travel', 'Food', 'Energy', 'Clothing'] }]} />
         </Chart>
       </Paper>

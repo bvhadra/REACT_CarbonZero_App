@@ -9,8 +9,10 @@ function Profile() {
 
     const renderGraphData = () => {
         return [...graphData].reverse().map((data, index) => (
+
             <div key={index} className="graph-container">
-                <ProfileResults clothing={data.clothing_score} food={data.food_score} travel={data.travel_score} energy={data.energy_score}/>
+                {/* <p className="date">{data.created_at.substring(0, 10).split('-').reverse().join('-')}</p> */}
+                <ProfileResults date={data.created_at.substring(0, 10).split('-').reverse().join('.')} clothing={data.clothing_score} food={data.food_score} travel={data.travel_score} energy={data.energy_score}/>
             </div>
         ));
     };
