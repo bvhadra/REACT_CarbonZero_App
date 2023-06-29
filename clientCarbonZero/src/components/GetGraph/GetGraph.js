@@ -2,7 +2,6 @@ import supabase from "../../lib/supabaseclient";
 import { useState, useEffect } from "react";
 
 function GetGraph( {setGraphData}) {
-  const [ setGraphError ] = useState(null);
   const [userSession, setUserSession ] = useState(null)
 
   useEffect(() => {
@@ -34,12 +33,10 @@ function GetGraph( {setGraphData}) {
     console.log(data);
 
     if (error) {
-      setGraphError("Record Not Found");
-      setGraphData(null);
+      console.log(error);
     }
 
     if (data) {
-      setGraphError(null);
       setGraphData(data);
     }
   };
