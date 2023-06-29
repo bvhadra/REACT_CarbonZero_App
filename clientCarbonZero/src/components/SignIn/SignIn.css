@@ -1,77 +1,75 @@
 /* app accessibility colors */
 :root {
-    --pure-black-color: #000000;
-    --pure-white-color: #ffffff;
-    --brunswick-green-color: #29524a;
-    --burnt-sienna-color: #dd6e42;
-    --floral-white-color: #fcf9ed;
-  }
-  
-  /* styles for main section of page */
-  .signin-main {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    background-image: url("../../assets/air-travel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* styles for main heading h1 */
-  .signin-main h1 {
-    font-size: 7rem;
-    grid-column: 10/12;
-    grid-row: 2;
-    color: var(--pure-white-color);
-    font-family: "League Spartan", sans-serif;
-    font-weight: 400;
-    z-index: 0;
-  }
-  
-  /* styles for white div positioned at center of page */
-  .signin-white-box {
-    grid-column: 4/18;
-    grid-row: 4/8;
-    background-color: var(--pure-white-color);
-    opacity: 0.5;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    display: grid;
-    z-index: 1;
-  }
-  
-  /* styles for white-box h2 element */
-  .signin-white-box h2 {
-      font-size: 4rem;
-      font-weight: 300;
-       text-align: center;
-       grid-column: 2/10;
-       grid-row: 3/7;
-  }
-  
-  /* styles for button with classname learn more */
-  .login {
-    width: 25rem;
-    height: 4rem;
-    grid-column: 10/12;
-    grid-row: 9;
-    background-color: var(--burnt-sienna-color);
-    opacity: 1;
-    color: var(--floral-white-color);
-    font-size: 1.8rem;
-    z-index: 2;
-  }
-  
-  /* styles for link to login page's stretch goal */
-  #login {
-    text-decoration: none;
-    color: var(--pure-white-color);
-    opacity: 1;
-    z-index: 3;
-  }
-  
-  /* end */
-  
-  
+  --pure-black-color: #000000;
+  --pure-white-color: #ffffff;
+  --brunswick-green-color: #29524a;
+  --burnt-sienna-color: #dd6e42;
+  --floral-white-color: #fcf9ed;
+}
+
+/* styles for main section of page */
+.signin-main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-image: url("../../assets/air-travel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* styles for main heading h1 */
+.signin-main h1 {
+  font-size: 7rem;
+  grid-column: 10/13;
+  grid-row: 2;
+  color: var(--pure-white-color);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  z-index: 0;
+}
+
+/* styles for white div positioned at center of page */
+.signin-white-box {
+  grid-column: 4/18;
+  grid-row: 4/8;
+  background-color: var(--pure-white-color);
+  opacity: 0.5;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  display: grid;
+  z-index: 1;
+}
+
+/* styles for white-box h2 element */
+.signin-white-box h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  grid-column: 2/10;
+  grid-row: 3/7;
+}
+
+/* styles for button with classname learn more */
+.login {
+  width: 25rem;
+  height: 4rem;
+  grid-column: 10/12;
+  grid-row: 9;
+  background-color: var(--burnt-sienna-color);
+  opacity: 1;
+  color: var(--floral-white-color);
+  font-size: 1.8rem;
+  z-index: 2;
+}
+
+/* styles for link to login page's stretch goal */
+#login {
+  text-decoration: none;
+  color: var(--pure-white-color);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* end */

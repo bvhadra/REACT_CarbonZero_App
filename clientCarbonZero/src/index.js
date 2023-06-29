@@ -4,14 +4,14 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
-import { Notifications } from 'react-push-notification';
+// import { Notifications } from 'react-push-notification';
 //git test
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Notifications />
+    {/* <Notifications /> */}
       <App />
     </BrowserRouter>
   </React.StrictMode>
