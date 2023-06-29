@@ -12,7 +12,6 @@ export default function Resultpage() {
         <div id='resultpage-div'>
           <Results />
         </div>
-        <p id='consider-signin'>To save the result of your questionnaire and more, consider signing in.</p>
         <Link to="/Actions">
           <button className='see-results-button' id="see-results"> Take Action! </button>
         </Link>

@@ -10,7 +10,6 @@ import supabase from '../../lib/supabaseclient'
 function Navbar() {
   const { setTotal } = useContext(TotalContext)
   const [userSession, setUserSession ] = useState("Sign In")
-  const [status, setStatus ] = useState(null)
 
   const handleClick = () => {
     setTotal({ travel: 0, food: 0, energy: 0, clothing: 0 });
