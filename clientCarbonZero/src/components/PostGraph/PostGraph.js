@@ -5,8 +5,8 @@
 // await for supabase from the user_score score and insert data. Then catch error
 
 import supabase from "../../lib/supabaseclient";
-import React from "react";
-import { useState, useEffect, useContext } from "react";
+// import React from "react";
+import { useEffect, useContext } from "react";
 import { TotalContext } from "../../context/TotalContext";
 
 
@@ -15,8 +15,7 @@ import { TotalContext } from "../../context/TotalContext";
 
 function PostGraph(){
 
-    const { total, setTotal } = useContext(TotalContext);
-    const [graphError, setGraphError] = useState(null);
+    const { total } = useContext(TotalContext);
 
 useEffect(() => {
 
@@ -41,6 +40,7 @@ useEffect(() => {
     }       
 
     postData()
+// eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 
 

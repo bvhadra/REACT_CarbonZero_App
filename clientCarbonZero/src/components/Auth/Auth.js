@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 import { Auth } from "@supabase/auth-ui-react";
 // import { Link } from "react-router-dom";
 import supabase from "../../lib/supabaseclient";
-// import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
-import ResultPage from "../ResultPage/resultpage";
+// // import SeeResultsButton from "../SeeResultsButton/SeeResultsButton";
+// import ResultPage from "../ResultPage/resultpage";
 import Navbar from "../Navbar/Navbar";
 import { useContext } from "react";
 import { TotalContext } from "../../context/TotalContext";
-import Home from "../Home/Home";
-import PostGraph from "../PostGraph/PostGraph";
+// import Home from "../Home/Home";
+// import PostGraph from "../PostGraph/PostGraph";
 import Profile from '../Profile/Profile'
 
 export default function Authenticate() {
