@@ -4,12 +4,30 @@ import logo from "../../assets/logo20.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { TotalContext } from "../../context/TotalContext";
+import { useEffect, useState } from 'react'
+import supabase from '../../lib/supabaseclient'
 
 function Navbar() {
   const { setTotal } = useContext(TotalContext)
+  const [userSession, setUserSession ] = useState("Sign In")
+
   const handleClick = () => {
     setTotal({ travel: 0, food: 0, energy: 0, clothing: 0 });
   };
+
+  useEffect(() => {
+    const fetchSessions = async () => {
+      supabase.auth.getSession().then(session => {
+        setUserSession(session.data.session ? "Profile" : "Sign In");
+      }).catch(error => {
+        console.error(error)
+      })
+    }    
+    
+    fetchSessions()
+  }, [])
+
+
   return (
     <div className="header-div">
       <ul className="navbar">
@@ -22,17 +40,17 @@ function Navbar() {
           <span class="material-symbols-outlined">Menu</span>
         </li>
         <ul className="navbar-ul">
-          <li>
-            <Link to="../Rewards">Rewards</Link>
-          </li>
-          <li onClick = {handleClick}>
+          <li onClick={handleClick}>
             <Link to="../Questionnaire">Questionnaire</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="../BecomeAMember">Become a member</Link>
+          </li> */}
+          <li>
+            <Link to="/auth">{userSession}</Link>
           </li>
           <li>
-            <Link to="../SignIn">Sign in</Link>
+            <Link to="../Rewards">Rewards</Link>
           </li>
         </ul>
       </ul>

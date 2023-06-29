@@ -26,11 +26,15 @@
   padding: 2rem;
 }
 
+#consider-signin {
+  text-align: center;
+}
+
 #see-results {
   text-align: center;
   display: grid;
   place-content: center;
- margin: 4rem auto 6rem auto;
+ margin: 2rem auto 6rem auto;
  cursor: pointer;
 }
 

@@ -16,7 +16,7 @@ export default function SignIn() {
           </h2>
         </div>
         <button className="login">
-          <Link to="../SignIn" id="login">
+          <Link to="/auth" id="login">
             Log in
           </Link>
         </button>
