@@ -41,17 +41,17 @@ function Navbar() {
           <span class="material-symbols-outlined">Menu</span>
         </li>
         <ul className="navbar-ul">
-          <li>
-            <Link to="../Rewards">Rewards</Link>
-          </li>
-          <li onClick = {handleClick}>
+          <li onClick={handleClick}>
             <Link to="../Questionnaire">Questionnaire</Link>
           </li>
           {/* <li>
             <Link to="../BecomeAMember">Become a member</Link>
           </li> */}
-          <li> 
+          <li>
             <Link to="/auth">{userSession}</Link>
+          </li>
+          <li>
+            <Link to="../Rewards">Rewards</Link>
           </li>
         </ul>
       </ul>
