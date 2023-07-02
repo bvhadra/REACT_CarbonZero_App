@@ -31,7 +31,7 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - Once we started building our app, we realised the importance of having an in-depth component tree
 - Pair programming is crucial to collaborate problem solving
 
-## Collaborators 
+## 🤝 Collaborators 
 - Max Murray - https://github.com/m4ax
 - Arwa Omran - 
 - Kunle Oladiji - 
