@@ -29,7 +29,7 @@ Our solution was to build CarbonZero - an app which helps to give people awarene
 - Use social media pages and YouTube videos as promotional platforms for the app.
 
 ## 🏫 Lessons learned 
-- Planning before coding is very important and its goes a long way
+- Planning before coding is very important and it goes a long way
 - All secretive information should be stored in the .env & .gitignore files so that it doesn't get pushed to Github
 - Netlify only accepts the lastest version of a library
 - Once we started building our app, we realised the importance of having an in-depth component tree
