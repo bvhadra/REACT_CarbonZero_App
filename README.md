@@ -19,7 +19,7 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - [Jest](https://jestjs.io/docs/getting-started) - Testing
 - [Github Actions](https://docs.github.com/en/actions/quickstart) - Testing the repo 
 
-## 🚀 Stretch goals 
+## 🚀 Future scope
 - Signing out functionality
 - Email reminders
 - Rewards system as an incentive
