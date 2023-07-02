@@ -10,7 +10,7 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - [CarbonZero website](https://carbon-zero.netlify.app) 
 - [App demo](https://www.youtube.com/watch?v=yaPmVoAudfw) 
 
-## ⛏️ Tech stack 
+## 🛠️ Tech stack 
 - [React](https://react.dev/) - Frontend framework
 - [React Charts](https://www.npmjs.com/package/react-charts) - Interactive charts 
 - [React router](https://www.npmjs.com/package/react-router-dom) - Linking pages 
