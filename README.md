@@ -30,7 +30,8 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - Netlify only accepts the lastest version of a library
 - Once we started building our app, we realised the importance of having an in-depth component tree
 - Pair programming is crucial to collaborate problem solving
-- Having a good understanding of our tech stack and being able to justify why we are using it 
+- Having a good understanding of our tech stack and being able to justify why we are using it
+- Working with unfamiliar tech libraries 
 
 ## 🤝 Collaborators 
 - Max Murray - https://github.com/m4ax
