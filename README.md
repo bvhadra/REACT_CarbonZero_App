@@ -4,7 +4,7 @@
 As a team we decided to focus on the issue of climate change. Based on our market research we discovered that people want to know what their carbon footprint looks like so that they can do more to reduce their own personal impact in their daily lives. Our problem statement became, "Our planet is warming up, but I don't know what my impact is or how to improve it."
 
 ## 💡 Solution  
-Our solution was to build CarbonZero - an app which helps give people awareness of their impact on climate change through their daily activities and delivers tailored education on how they could make a positive change. 
+Our solution was to build CarbonZero - an app which helps to give people awareness of their impact on climate change through their daily activities and delivers tailored education on how they could make a positive change. 
 
 ## 🏁 Visit our website 
 - [CarbonZero website](https://carbon-zero.netlify.app) 
