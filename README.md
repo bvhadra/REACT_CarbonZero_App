@@ -1,5 +1,7 @@
 # 🌎 CarbonZero - SoC Final Project
 
+Collaborators: Max Murray, Arwa Omran, Kunle Oladiji, Bidhan Vhadra, Naeem Iqbal & Naomi Uwamungu
+
 ## Problem statement 
 As a team decided to focus on the issue of climate change. Based on our market research we discovered that people want to know what their carbon footprint looks like so that they can do more to reduce their own personal impact in their daily lives. Our statement became, "Our planet is warming up, but I don't know what my impact is or how to improve it."
 
