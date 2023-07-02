@@ -20,9 +20,13 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - [Github Actions](https://docs.github.com/en/actions/quickstart) - Testing the repo 
 
 ## 🚀 Future scope
-- Signing out functionality
-- Email reminders
-- Rewards system as an incentive
+- Implement a sign-out function to allow users to log out of the app.
+- Expand the questionnaire with additional sets of adaptive questions based on initial responses.
+- Enhance the app with sound effects and music corresponding to questionnaire scores, creating a celebratory atmosphere for positive results.
+- Set up email reminders to prompt users with recommended actions for reducing their carbon footprint.
+- Introduce a rewards section where users can receive special gifts and discounts based on their questionnaire scores and app usage. These rewards will promote environmentally friendly options for travel, food, energy, and clothing.
+- Offer a subscription option for users to receive a newsletter with further information, helping to promote the app.
+- Use social media pages and YouTube videos as promotional platforms for the app.
 
 ## 🏫 Lessons learned 
 - Planning before coding is very important and its goes a long way
