@@ -33,7 +33,7 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - Having a good understanding of our tech stack and being able to justify why we are using it
 - Working with unfamiliar tech libraries 
 
-## 🤝 Collaborators 
+## 🤝 Contributors 
 - Max Murray - https://github.com/m4ax
 - Arwa Omran - 
 - Kunle Oladiji - 
