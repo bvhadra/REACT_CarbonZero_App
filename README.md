@@ -36,9 +36,9 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 
 ## 🤝 Contributors 
 - Max Murray - https://github.com/m4ax
-- Arwa Omran - 
-- Kunle Oladiji - 
+- Arwa Omran - https://github.com/arwa-omran
+- Kunle Oladiji - https://github.com/gipo-ski
 - Bidhan Vhadra - https://github.com/bvhadra/bvhadra
-- Naeem Iqbal - 
+- Naeem Iqbal - https://github.com/naeemaamir
 - Naomi Uwamungu - https://github.com/naomiuwa
   
