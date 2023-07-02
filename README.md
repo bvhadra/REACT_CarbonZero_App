@@ -33,7 +33,7 @@ Our solution was to build CarbonZero - an app which helps give people awareness 
 - All secretive information should be stored in the .env & .gitignore files so that it doesn't get pushed to Github
 - Netlify only accepts the lastest version of a library
 - Once we started building our app, we realised the importance of having an in-depth component tree
-- Pair programming is crucial to collaborate problem solving
+- Pair programming is crucial to collaborative problem solving
 - Having a good understanding of our tech stack and being able to justify why we are using it
 - Working with unfamiliar tech libraries
 - The importance of getting user feedback to ensure our app meets their needs 
