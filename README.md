@@ -8,7 +8,7 @@ Our solution was to build CarbonZero - an app which helps to give people awarene
 
 ## 🏁 Visit our website 
 - [CarbonZero website](https://carbon-zero.netlify.app) 
-- [App demo](https://www.youtube.com/watch?v=yaPmVoAudfw) 
+- [App demo](https://www.youtube.com/watch?v=3RkYc9jqRHg) 
 
 ## 🛠️ Tech stack 
 - [React](https://react.dev/) - Frontend framework
