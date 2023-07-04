@@ -27,40 +27,43 @@
   color: var(--pure-white-color);
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
+  margin-bottom: 1rem;
   z-index: 0;
 }
 
 /* styles for white div positioned at center of page */
 .rewards-white-box {
-  grid-column: 4/18;
-  grid-row: 4/8;
+  grid-column: 5/17;
+  grid-row: 3/7;
+  /* margin-top: 1rem; */
   background-color: var(--pure-white-color);
   opacity: 0.5;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr); 
+  grid-template-rows: repeat(10, 1fr);
   display: grid;
   z-index: 1;
 }
 
 /* styles for white-box h2 element */
 .rewards-white-box h2 {
-    font-size: 4rem;
-    font-weight: 300;
-     text-align: center;
-     grid-column: 3/9;
-     grid-row: 3/7;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  grid-column: 2/10;
+  grid-row: 2/9;
 }
 
 /* styles for button with classname learn more */
-.learn-more {
+.my-rewards {
   width: 25rem;
   height: 4rem;
   grid-column: 10/12;
-  grid-row: 9;
+  grid-row: 8;
   background-color: var(--burnt-sienna-color);
   opacity: 1;
   color: var(--floral-white-color);
   font-size: 1.8rem;
+  border: none;
   z-index: 2;
 }
 
@@ -68,8 +71,110 @@
 #my-rewards {
   text-decoration: none;
   color: var(--pure-white-color);
+  padding: 1rem 7rem;
   opacity: 1;
   z-index: 3;
+}
+
+/* styles for large and small laptops */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .rewards-main h1 {
+    font-size: 6.5rem;
+     grid-column: 8/15;
+  }
+  .rewards-white-box {
+    grid-column: 5/16;
+    grid-row: 3/7;
+  }
+  .rewards-white-box h2 {
+    font-size: 3.3rem;
+    grid-column: 2/10;
+    grid-row: 2/7;
+  }
+  .my-rewards {
+  width: 23rem;
+  height: 3.8rem;
+  grid-column: 10/12;
+  grid-row: 8;
+  font-size: 1.5rem;
+}
+}
+
+/* styles for small laptops and tablets */
+@media (max-width: 1024px) {
+  .rewards-main h1 {
+    font-size: 6rem;
+     grid-column: 7/16;
+
+  }
+  .rewards-white-box {
+    grid-column: 5/16;
+    grid-row: 3/7;
+  }
+  .rewards-white-box h2 {
+    font-size: 3rem;
+    grid-column: 2/10;
+    grid-row: 2/7;
+  }
+    .my-rewards {
+  width: 21rem;
+  height: 3.5rem;
+  grid-column: 10/12;
+  grid-row: 8;
+  font-size: 1.2rem;
+}
+}
+/* styles for mobile and tablets */
+@media (max-width: 768px) {
+  .rewards-main h1 {
+    font-size: 5rem;
+     grid-column: 7/16;
+
+  }
+  .rewards-white-box {
+    grid-column: 5/16;
+    grid-row: 3/7;
+  }
+  .rewards-white-box h2 {
+    font-size: 2.5rem;
+    grid-column: 2/10;
+    grid-row: 2/7;
+  }
+    .my-rewards {
+  width: 21rem;
+  height: 3.5rem;
+  grid-column: 10/12;
+  grid-row: 8;
+  font-size: 1rem;
+}
+}
+/* styles for mobile */
+@media (max-width: 425px) {
+  .rewards-main h1 {
+    font-size: 3rem;
+     grid-column: 7/16;
+
+  }
+  .rewards-white-box {
+    grid-column: 5/16;
+    grid-row: 3/7;
+  }
+  .rewards-white-box h2 {
+    font-size: 2rem;
+    grid-column: 2/10;
+    grid-row: 2/7;
+  }
+    .my-rewards {
+  width: 15rem;
+  height: 3rem;
+  grid-column: 10/12;
+  grid-row: 8;
+  font-size: 1rem;
+}
+#my-rewards {
+  padding: 1rem 4rem;
+}
+
 }
 
 /* end */

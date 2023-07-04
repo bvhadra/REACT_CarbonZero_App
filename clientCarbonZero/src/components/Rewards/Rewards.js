@@ -12,7 +12,7 @@ export default function Rewards() {
         <div className="rewards-white-box">
           <h2>Get some rewards now for your hardwork towards saving the planet!</h2>
         </div>
-        <button className="learn-more">
+        <button className="my-rewards">
           <Link to="../Rewards" id="my-rewards">
             My rewards
           </Link>
