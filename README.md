@@ -39,10 +39,10 @@ Our solution was to build CarbonZero - an app which helps to give people awarene
 - The importance of getting user feedback to ensure our app meets their needs 
 
 ## 🤝 Contributors 
+- Bidhan Vhadra - https://github.com/bvhadra
 - Max Murray - https://github.com/m4ax
 - Arwa Omran - https://github.com/arwa-omran
 - Kunle Oladiji - https://github.com/gipo-ski
-- Bidhan Vhadra - https://github.com/bvhadra
 - Naeem Iqbal - https://github.com/naeemaamir
 - Naomi Uwamungu - https://github.com/naomiuwa
   
